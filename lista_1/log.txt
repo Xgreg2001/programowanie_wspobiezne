@@ -1,0 +1,1226 @@
+ID: 80 [Oct 29 18:01:44.242093] E-ID:  1   spawned at ( 8, 0)
+ID: 54 [Oct 29 18:01:44.242163] E-ID:  2   spawned at ( 5, 4)
+ID: 55 [Oct 29 18:01:44.242165] E-ID:  3   spawned at ( 5, 5)
+ID: 32 [Oct 29 18:01:44.292672] E-ID:  4   spawned at ( 3, 2)
+ID: 41 [Oct 29 18:01:44.343368] E-ID:  5   spawned at ( 4, 1)
+ID: 20 [Oct 29 18:01:44.343391] E-ID:  6   spawned at ( 2, 0)
+ID: 43 [Oct 29 18:01:44.394029] E-ID:  7   spawned at ( 4, 3)
+ID: 36 [Oct 29 18:01:44.394060] E-ID:  8   spawned at ( 3, 6)
+ID: 54 [Oct 29 18:01:44.445016] E-ID:  2    send from ( 5, 4) to ( 5, 3) [W]
+ID:  7 [Oct 29 18:01:44.445085] E-ID:  9   spawned at ( 0, 7)
+ID: 53 [Oct 29 18:01:44.445184] E-ID:  2   recived at ( 5, 3)
+ID: 77 [Oct 29 18:01:44.596510] E-ID: 10   spawned at ( 7, 7)
+ID: 37 [Oct 29 18:01:44.646877] E-ID: 11   spawned at ( 3, 7)
+ID: 20 [Oct 29 18:01:44.697170] E-ID:  6    send from ( 2, 0) to ( 2, 1) [E]
+ID: 54 [Oct 29 18:01:44.697185] E-ID: 12   spawned at ( 5, 4)
+ID: 21 [Oct 29 18:01:44.697195] E-ID:  6   recived at ( 2, 1)
+ID: 93 [Oct 29 18:01:44.697252] E-ID: 13   spawned at ( 9, 3)
+ID: 77 [Oct 29 18:01:44.748348] E-ID: 10    send from ( 7, 7) to ( 6, 7) [N]
+ID: 67 [Oct 29 18:01:44.748379] E-ID: 10   recived at ( 6, 7)
+ID: 41 [Oct 29 18:01:44.849249] E-ID:  5    send from ( 4, 1) to ( 3, 1) [N]
+ID: 31 [Oct 29 18:01:44.849259] E-ID:  5   recived at ( 3, 1)
+ID: 55 [Oct 29 18:01:44.899703] E-ID:  3    send from ( 5, 5) to ( 6, 5) [S]
+ID: 65 [Oct 29 18:01:44.899715] E-ID:  3   recived at ( 6, 5)
+ID: 36 [Oct 29 18:01:44.899819] E-ID:  8    send from ( 3, 6) to ( 2, 6) [N]
+ID: 26 [Oct 29 18:01:44.899883] E-ID:  8   recived at ( 2, 6)
+ID: 64 [Oct 29 18:01:44.950282] E-ID: 14   spawned at ( 6, 4)
+ID:  7 [Oct 29 18:01:44.950317] E-ID:  9    send from ( 0, 7) to ( 1, 7) [S]
+ID: 17 [Oct 29 18:01:44.950322] E-ID:  9   recived at ( 1, 7)
+ID: 50 [Oct 29 18:01:45.000600] E-ID: 15   spawned at ( 5, 0)
+ID: 83 [Oct 29 18:01:45.051603] E-ID: 16   spawned at ( 8, 3)
+ID: 92 [Oct 29 18:01:45.051636] E-ID: 17   spawned at ( 9, 2)
+ID: 50 [Oct 29 18:01:45.102133] E-ID: 15    send from ( 5, 0) to ( 4, 0) [N]
+ID: 40 [Oct 29 18:01:45.102165] E-ID: 15   recived at ( 4, 0)
+ID: 65 [Oct 29 18:01:45.152540] E-ID:  3    send from ( 6, 5) to ( 7, 5) [S]
+ID: 75 [Oct 29 18:01:45.152556] E-ID:  3   recived at ( 7, 5)
+ID: 83 [Oct 29 18:01:45.152641] E-ID: 16    send from ( 8, 3) to ( 8, 4) [E]
+ID: 77 [Oct 29 18:01:45.152662] E-ID: 18   spawned at ( 7, 7)
+ID: 84 [Oct 29 18:01:45.152692] E-ID: 16   recived at ( 8, 4)
+ID: 31 [Oct 29 18:01:45.202938] E-ID:  5    send from ( 3, 1) to ( 4, 1) [S]
+ID: 21 [Oct 29 18:01:45.202949] E-ID:  6    send from ( 2, 1) to ( 2, 0) [W]
+ID: 41 [Oct 29 18:01:45.202957] E-ID:  5   recived at ( 4, 1)
+ID: 20 [Oct 29 18:01:45.202959] E-ID:  6   recived at ( 2, 0)
+ID: 48 [Oct 29 18:01:45.203052] E-ID: 19   spawned at ( 4, 8)
+ID: 70 [Oct 29 18:01:45.203074] E-ID: 20   spawned at ( 7, 0)
+ID: 37 [Oct 29 18:01:45.253511] E-ID: 11    send from ( 3, 7) to ( 3, 8) [E]
+ID: 80 [Oct 29 18:01:45.253553] E-ID:  1    send from ( 8, 0) to ( 8, 1) [E]
+ID: 38 [Oct 29 18:01:45.253560] E-ID: 11   recived at ( 3, 8)
+ID: 81 [Oct 29 18:01:45.253562] E-ID:  1   recived at ( 8, 1)
+ID: 54 [Oct 29 18:01:45.303834] E-ID: 12    send from ( 5, 4) to ( 5, 5) [E]
+ID: 93 [Oct 29 18:01:45.303858] E-ID: 13    send from ( 9, 3) to ( 9, 4) [E]
+ID: 84 [Oct 29 18:01:45.303870] E-ID: 16    send from ( 8, 4) to ( 7, 4) [N]
+ID: 55 [Oct 29 18:01:45.303882] E-ID: 12   recived at ( 5, 5)
+ID: 94 [Oct 29 18:01:45.303885] E-ID: 13   recived at ( 9, 4)
+ID: 74 [Oct 29 18:01:45.303886] E-ID: 16   recived at ( 7, 4)
+ID: 20 [Oct 29 18:01:45.303897] E-ID:  6    send from ( 2, 0) to ( 1, 0) [N]
+ID: 10 [Oct 29 18:01:45.303898] E-ID:  6   recived at ( 1, 0)
+ID: 10 [Oct 29 18:01:45.354730] E-ID:  6    send from ( 1, 0) to ( 2, 0) [S]
+ID: 17 [Oct 29 18:01:45.354789] E-ID:  9    send from ( 1, 7) to ( 2, 7) [S]
+ID: 20 [Oct 29 18:01:45.354801] E-ID:  6   recived at ( 2, 0)
+ID: 27 [Oct 29 18:01:45.354803] E-ID:  9   recived at ( 2, 7)
+ID: 92 [Oct 29 18:01:45.405066] E-ID: 17    send from ( 9, 2) to ( 9, 1) [W]
+ID: 21 [Oct 29 18:01:45.405216] E-ID: 21   spawned at ( 2, 1)
+ID: 91 [Oct 29 18:01:45.405269] E-ID: 17   recived at ( 9, 1)
+ID: 38 [Oct 29 18:01:45.506061] E-ID: 11    send from ( 3, 8) to ( 3, 9) [E]
+ID: 39 [Oct 29 18:01:45.506094] E-ID: 11   recived at ( 3, 9)
+ID: 23 [Oct 29 18:01:45.506182] E-ID: 22   spawned at ( 2, 3)
+ID: 75 [Oct 29 18:01:45.506192] E-ID:  3    send from ( 7, 5) to ( 8, 5) [S]
+ID: 85 [Oct 29 18:01:45.506214] E-ID:  3   recived at ( 8, 5)
+ID: 67 [Oct 29 18:01:45.506220] E-ID: 10    send from ( 6, 7) to ( 6, 8) [E]
+ID: 68 [Oct 29 18:01:45.506224] E-ID: 10   recived at ( 6, 8)
+ID: 74 [Oct 29 18:01:45.506229] E-ID: 16    send from ( 7, 4) to ( 7, 3) [W]
+ID: 73 [Oct 29 18:01:45.506231] E-ID: 16   recived at ( 7, 3)
+ID: 54 [Oct 29 18:01:45.556423] E-ID: 23   spawned at ( 5, 4)
+ID: 64 [Oct 29 18:01:45.556440] E-ID: 14    send from ( 6, 4) to ( 7, 4) [S]
+ID: 68 [Oct 29 18:01:45.556484] E-ID: 10    send from ( 6, 8) to ( 6, 9) [E]
+ID: 42 [Oct 29 18:01:45.556489] E-ID: 24   spawned at ( 4, 2)
+ID: 74 [Oct 29 18:01:45.556494] E-ID: 14   recived at ( 7, 4)
+ID: 69 [Oct 29 18:01:45.556495] E-ID: 10   recived at ( 6, 9)
+ID: 53 [Oct 29 18:01:45.606945] E-ID:  2    send from ( 5, 3) to ( 5, 2) [W]
+ID: 52 [Oct 29 18:01:45.606959] E-ID:  2   recived at ( 5, 2)
+ID:  6 [Oct 29 18:01:45.658103] E-ID: 25   spawned at ( 0, 6)
+ID: 97 [Oct 29 18:01:45.658130] E-ID: 26   spawned at ( 9, 7)
+ID: 97 [Oct 29 18:01:45.708623] E-ID: 26    send from ( 9, 7) to ( 8, 7) [N]
+ID: 87 [Oct 29 18:01:45.708645] E-ID: 26   recived at ( 8, 7)
+ID: 43 [Oct 29 18:01:45.708651] E-ID:  7    send from ( 4, 3) to ( 5, 3) [S]
+ID: 53 [Oct 29 18:01:45.708681] E-ID:  7   recived at ( 5, 3)
+ID: 23 [Oct 29 18:01:45.758969] E-ID: 22    send from ( 2, 3) to ( 3, 3) [S]
+ID: 33 [Oct 29 18:01:45.759015] E-ID: 22   recived at ( 3, 3)
+ID: 39 [Oct 29 18:01:45.759040] E-ID: 11    send from ( 3, 9) to ( 4, 9) [S]
+ID: 49 [Oct 29 18:01:45.759056] E-ID: 11   recived at ( 4, 9)
+ID: 85 [Oct 29 18:01:45.809315] E-ID:  3    send from ( 8, 5) to ( 8, 6) [E]
+ID: 82 [Oct 29 18:01:45.809333] E-ID: 27   spawned at ( 8, 2)
+ID: 87 [Oct 29 18:01:45.809344] E-ID: 26    send from ( 8, 7) to ( 9, 7) [S]
+ID: 26 [Oct 29 18:01:45.809358] E-ID:  8    send from ( 2, 6) to ( 3, 6) [S]
+ID: 86 [Oct 29 18:01:45.809371] E-ID:  3   recived at ( 8, 6)
+ID: 97 [Oct 29 18:01:45.809373] E-ID: 26   recived at ( 9, 7)
+ID: 36 [Oct 29 18:01:45.809374] E-ID:  8   recived at ( 3, 6)
+ID: 30 [Oct 29 18:01:45.809375] E-ID: 28   spawned at ( 3, 0)
+ID: 70 [Oct 29 18:01:45.859871] E-ID: 20    send from ( 7, 0) to ( 8, 0) [S]
+ID: 80 [Oct 29 18:01:45.859898] E-ID: 20   recived at ( 8, 0)
+ID: 68 [Oct 29 18:01:45.859909] E-ID: 29   spawned at ( 6, 8)
+ID: 78 [Oct 29 18:01:45.859910] E-ID: 30   spawned at ( 7, 8)
+ID: 85 [Oct 29 18:01:45.910154] E-ID: 31   spawned at ( 8, 5)
+ID: 54 [Oct 29 18:01:45.910185] E-ID: 23    send from ( 5, 4) to ( 6, 4) [S]
+ID: 64 [Oct 29 18:01:45.910210] E-ID: 23   recived at ( 6, 4)
+ID: 68 [Oct 29 18:01:45.910217] E-ID: 29    send from ( 6, 8) to ( 6, 7) [W]
+ID: 67 [Oct 29 18:01:45.910218] E-ID: 29   recived at ( 6, 7)
+ID: 55 [Oct 29 18:01:45.960922] E-ID: 12    send from ( 5, 5) to ( 5, 4) [W]
+ID: 54 [Oct 29 18:01:45.960939] E-ID: 12   recived at ( 5, 4)
+ID: 40 [Oct 29 18:01:46.011113] E-ID: 15    send from ( 4, 0) to ( 5, 0) [S]
+ID: 50 [Oct 29 18:01:46.011177] E-ID: 15   recived at ( 5, 0)
+ID: 33 [Oct 29 18:01:46.011261] E-ID: 22    send from ( 3, 3) to ( 2, 3) [N]
+ID: 85 [Oct 29 18:01:46.011286] E-ID: 31    send from ( 8, 5) to ( 7, 5) [N]
+ID: 23 [Oct 29 18:01:46.011299] E-ID: 22   recived at ( 2, 3)
+ID: 75 [Oct 29 18:01:46.011304] E-ID: 31   recived at ( 7, 5)
+ID: 20 [Oct 29 18:01:46.011323] E-ID:  6    send from ( 2, 0) to ( 1, 0) [N]
+ID: 10 [Oct 29 18:01:46.011335] E-ID:  6   recived at ( 1, 0)
+ID: 86 [Oct 29 18:01:46.111675] E-ID:  3    send from ( 8, 6) to ( 8, 7) [E]
+ID: 87 [Oct 29 18:01:46.111704] E-ID:  3   recived at ( 8, 7)
+ID: 94 [Oct 29 18:01:46.162063] E-ID: 13    send from ( 9, 4) to ( 9, 3) [W]
+ID: 64 [Oct 29 18:01:46.162071] E-ID: 23    send from ( 6, 4) to ( 6, 5) [E]
+ID: 65 [Oct 29 18:01:46.162072] E-ID: 23   recived at ( 6, 5)
+ID: 93 [Oct 29 18:01:46.162095] E-ID: 13   recived at ( 9, 3)
+ID: 74 [Oct 29 18:01:46.212152] E-ID: 14    send from ( 7, 4) to ( 6, 4) [N]
+ID: 64 [Oct 29 18:01:46.212166] E-ID: 14   recived at ( 6, 4)
+ID: 49 [Oct 29 18:01:46.212204] E-ID: 11    send from ( 4, 9) to ( 3, 9) [N]
+ID: 39 [Oct 29 18:01:46.212227] E-ID: 11   recived at ( 3, 9)
+ID: 21 [Oct 29 18:01:46.212249] E-ID: 21    send from ( 2, 1) to ( 1, 1) [N]
+ID: 11 [Oct 29 18:01:46.212263] E-ID: 21   recived at ( 1, 1)
+ID: 23 [Oct 29 18:01:46.212273] E-ID: 22    send from ( 2, 3) to ( 2, 2) [W]
+ID: 22 [Oct 29 18:01:46.212278] E-ID: 22   recived at ( 2, 2)
+ID: 40 [Oct 29 18:01:46.263008] E-ID: 32   spawned at ( 4, 0)
+ID:  6 [Oct 29 18:01:46.263045] E-ID: 25    send from ( 0, 6) to ( 0, 7) [E]
+ID:  7 [Oct 29 18:01:46.263089] E-ID: 25   recived at ( 0, 7)
+ID: 65 [Oct 29 18:01:46.263095] E-ID: 23    send from ( 6, 5) to ( 6, 6) [E]
+ID: 66 [Oct 29 18:01:46.263099] E-ID: 23   recived at ( 6, 6)
+ID: 25 [Oct 29 18:01:46.313426] E-ID: 33   spawned at ( 2, 5)
+ID: 97 [Oct 29 18:01:46.313502] E-ID: 26    send from ( 9, 7) to ( 9, 6) [W]
+ID:  7 [Oct 29 18:01:46.313516] E-ID: 25    send from ( 0, 7) to ( 0, 6) [W]
+ID: 96 [Oct 29 18:01:46.313522] E-ID: 26   recived at ( 9, 6)
+ID:  6 [Oct 29 18:01:46.313524] E-ID: 25   recived at ( 0, 6)
+ID:  3 [Oct 29 18:01:46.363574] E-ID: 34   spawned at ( 0, 3)
+ID: 82 [Oct 29 18:01:46.363586] E-ID: 27    send from ( 8, 2) to ( 7, 2) [N]
+ID: 72 [Oct 29 18:01:46.363594] E-ID: 27   recived at ( 7, 2)
+ID: 50 [Oct 29 18:01:46.363663] E-ID: 15    send from ( 5, 0) to ( 5, 1) [E]
+ID: 51 [Oct 29 18:01:46.363670] E-ID: 15   recived at ( 5, 1)
+ID:  6 [Oct 29 18:01:46.363671] E-ID: 25    send from ( 0, 6) to ( 1, 6) [S]
+ID: 16 [Oct 29 18:01:46.363672] E-ID: 25   recived at ( 1, 6)
+ID: 80 [Oct 29 18:01:46.363686] E-ID: 20    send from ( 8, 0) to ( 7, 0) [N]
+ID: 70 [Oct 29 18:01:46.363694] E-ID: 20   recived at ( 7, 0)
+ID: 67 [Oct 29 18:01:46.363738] E-ID: 29    send from ( 6, 7) to ( 5, 7) [N]
+ID: 57 [Oct 29 18:01:46.363747] E-ID: 29   recived at ( 5, 7)
+ID: 72 [Oct 29 18:01:46.414066] E-ID: 27    send from ( 7, 2) to ( 6, 2) [N]
+ID: 62 [Oct 29 18:01:46.414116] E-ID: 27   recived at ( 6, 2)
+ID: 48 [Oct 29 18:01:46.414162] E-ID: 19    send from ( 4, 8) to ( 4, 7) [W]
+ID: 81 [Oct 29 18:01:46.414165] E-ID:  1    send from ( 8, 1) to ( 8, 0) [W]
+ID: 80 [Oct 29 18:01:46.414166] E-ID:  1   recived at ( 8, 0)
+ID: 47 [Oct 29 18:01:46.414172] E-ID: 19   recived at ( 4, 7)
+ID: 25 [Oct 29 18:01:46.464552] E-ID: 33    send from ( 2, 5) to ( 3, 5) [S]
+ID: 75 [Oct 29 18:01:46.464571] E-ID: 31    send from ( 7, 5) to ( 7, 6) [E]
+ID: 35 [Oct 29 18:01:46.464583] E-ID: 33   recived at ( 3, 5)
+ID: 76 [Oct 29 18:01:46.464585] E-ID: 31   recived at ( 7, 6)
+ID: 30 [Oct 29 18:01:46.514889] E-ID: 28    send from ( 3, 0) to ( 3, 1) [E]
+ID: 29 [Oct 29 18:01:46.514906] E-ID: 35   spawned at ( 2, 9)
+ID: 98 [Oct 29 18:01:46.514912] E-ID: 36   spawned at ( 9, 8)
+ID: 76 [Oct 29 18:01:46.514923] E-ID: 31    send from ( 7, 6) to ( 8, 6) [S]
+ID: 16 [Oct 29 18:01:46.514931] E-ID: 25    send from ( 1, 6) to ( 0, 6) [N]
+ID: 31 [Oct 29 18:01:46.514937] E-ID: 28   recived at ( 3, 1)
+ID: 86 [Oct 29 18:01:46.514939] E-ID: 31   recived at ( 8, 6)
+ID:  6 [Oct 29 18:01:46.514941] E-ID: 25   recived at ( 0, 6)
+ID: 87 [Oct 29 18:01:46.565911] E-ID:  3    send from ( 8, 7) to ( 9, 7) [S]
+ID: 88 [Oct 29 18:01:46.565966] E-ID: 37   spawned at ( 8, 8)
+ID: 69 [Oct 29 18:01:46.565974] E-ID: 10    send from ( 6, 9) to ( 6, 8) [W]
+ID: 97 [Oct 29 18:01:46.566006] E-ID:  3   recived at ( 9, 7)
+ID: 68 [Oct 29 18:01:46.566010] E-ID: 10   recived at ( 6, 8)
+ID: 54 [Oct 29 18:01:46.616477] E-ID: 12    send from ( 5, 4) to ( 4, 4) [N]
+ID: 44 [Oct 29 18:01:46.616499] E-ID: 12   recived at ( 4, 4)
+ID: 91 [Oct 29 18:01:46.616574] E-ID: 17    send from ( 9, 1) to ( 9, 2) [E]
+ID: 29 [Oct 29 18:01:46.616591] E-ID: 35    send from ( 2, 9) to ( 2, 8) [W]
+ID: 17 [Oct 29 18:01:46.616605] E-ID: 38   spawned at ( 1, 7)
+ID: 22 [Oct 29 18:01:46.616611] E-ID: 22    send from ( 2, 2) to ( 2, 3) [E]
+ID: 86 [Oct 29 18:01:46.616673] E-ID: 31    send from ( 8, 6) to ( 8, 7) [E]
+ID: 87 [Oct 29 18:01:46.616675] E-ID: 31   recived at ( 8, 7)
+ID:  6 [Oct 29 18:01:46.616676] E-ID: 25    send from ( 0, 6) to ( 0, 5) [W]
+ID:  5 [Oct 29 18:01:46.616677] E-ID: 25   recived at ( 0, 5)
+ID: 68 [Oct 29 18:01:46.616690] E-ID: 10    send from ( 6, 8) to ( 6, 9) [E]
+ID: 69 [Oct 29 18:01:46.616691] E-ID: 10   recived at ( 6, 9)
+ID: 92 [Oct 29 18:01:46.616694] E-ID: 17   recived at ( 9, 2)
+ID: 28 [Oct 29 18:01:46.616696] E-ID: 35   recived at ( 2, 8)
+ID: 23 [Oct 29 18:01:46.616697] E-ID: 22   recived at ( 2, 3)
+ID: 28 [Oct 29 18:01:46.667027] E-ID: 35    send from ( 2, 8) to ( 2, 9) [E]
+ID: 29 [Oct 29 18:01:46.667038] E-ID: 35   recived at ( 2, 9)
+ID: 48 [Oct 29 18:01:46.717361] E-ID: 39   spawned at ( 4, 8)
+ID: 64 [Oct 29 18:01:46.717373] E-ID: 14    send from ( 6, 4) to ( 5, 4) [N]
+ID: 62 [Oct 29 18:01:46.717395] E-ID: 27    send from ( 6, 2) to ( 6, 3) [E]
+ID: 42 [Oct 29 18:01:46.717402] E-ID: 24    send from ( 4, 2) to ( 4, 3) [E]
+ID: 32 [Oct 29 18:01:46.717404] E-ID:  4    send from ( 3, 2) to ( 2, 2) [N]
+ID: 22 [Oct 29 18:01:46.717405] E-ID:  4   recived at ( 2, 2)
+ID: 54 [Oct 29 18:01:46.717410] E-ID: 14   recived at ( 5, 4)
+ID: 43 [Oct 29 18:01:46.717412] E-ID: 24   recived at ( 4, 3)
+ID: 63 [Oct 29 18:01:46.717414] E-ID: 27   recived at ( 6, 3)
+ID: 78 [Oct 29 18:01:46.768067] E-ID: 30    send from ( 7, 8) to ( 6, 8) [N]
+ID: 68 [Oct 29 18:01:46.768160] E-ID: 30   recived at ( 6, 8)
+ID: 66 [Oct 29 18:01:46.818716] E-ID: 23    send from ( 6, 6) to ( 6, 7) [E]
+ID: 67 [Oct 29 18:01:46.818755] E-ID: 23   recived at ( 6, 7)
+ID: 17 [Oct 29 18:01:46.869302] E-ID: 38    send from ( 1, 7) to ( 1, 8) [E]
+ID: 18 [Oct 29 18:01:46.869317] E-ID: 38   recived at ( 1, 8)
+ID: 67 [Oct 29 18:01:46.869372] E-ID: 23    send from ( 6, 7) to ( 6, 6) [W]
+ID: 66 [Oct 29 18:01:46.869373] E-ID: 23   recived at ( 6, 6)
+ID: 88 [Oct 29 18:01:46.869413] E-ID: 37    send from ( 8, 8) to ( 8, 9) [E]
+ID: 77 [Oct 29 18:01:46.869418] E-ID: 18    send from ( 7, 7) to ( 7, 6) [W]
+ID: 89 [Oct 29 18:01:46.869432] E-ID: 37   recived at ( 8, 9)
+ID: 76 [Oct 29 18:01:46.869434] E-ID: 18   recived at ( 7, 6)
+ID: 31 [Oct 29 18:01:46.869442] E-ID: 28    send from ( 3, 1) to ( 2, 1) [N]
+ID: 21 [Oct 29 18:01:46.869448] E-ID: 28   recived at ( 2, 1)
+ID: 40 [Oct 29 18:01:46.919639] E-ID: 32    send from ( 4, 0) to ( 5, 0) [S]
+ID: 50 [Oct 29 18:01:46.919704] E-ID: 32   recived at ( 5, 0)
+ID: 87 [Oct 29 18:01:46.970123] E-ID: 31    send from ( 8, 7) to ( 8, 6) [W]
+ID: 93 [Oct 29 18:01:46.970182] E-ID: 13    send from ( 9, 3) to ( 8, 3) [N]
+ID: 86 [Oct 29 18:01:46.970189] E-ID: 31   recived at ( 8, 6)
+ID: 83 [Oct 29 18:01:46.970191] E-ID: 13   recived at ( 8, 3)
+ID: 18 [Oct 29 18:01:46.970197] E-ID: 38    send from ( 1, 8) to ( 0, 8) [N]
+ID: 43 [Oct 29 18:01:46.970202] E-ID: 24    send from ( 4, 3) to ( 3, 3) [N]
+ID:  8 [Oct 29 18:01:46.970203] E-ID: 38   recived at ( 0, 8)
+ID: 33 [Oct 29 18:01:46.970206] E-ID: 24   recived at ( 3, 3)
+ID: 32 [Oct 29 18:01:47.020472] E-ID: 40   spawned at ( 3, 2)
+ID: 50 [Oct 29 18:01:47.020499] E-ID: 32    send from ( 5, 0) to ( 4, 0) [N]
+ID:  8 [Oct 29 18:01:47.020520] E-ID: 38    send from ( 0, 8) to ( 0, 9) [E]
+ID: 40 [Oct 29 18:01:47.020521] E-ID: 32   recived at ( 4, 0)
+ID:  9 [Oct 29 18:01:47.020549] E-ID: 38   recived at ( 0, 9)
+ID: 97 [Oct 29 18:01:47.070913] E-ID:  3    send from ( 9, 7) to ( 8, 7) [N]
+ID: 87 [Oct 29 18:01:47.070924] E-ID:  3   recived at ( 8, 7)
+ID: 42 [Oct 29 18:01:47.070958] E-ID: 41   spawned at ( 4, 2)
+ID: 89 [Oct 29 18:01:47.070964] E-ID: 37    send from ( 8, 9) to ( 9, 9) [S]
+ID: 99 [Oct 29 18:01:47.070970] E-ID: 37   recived at ( 9, 9)
+ID: 47 [Oct 29 18:01:47.121370] E-ID: 19    send from ( 4, 7) to ( 3, 7) [N]
+ID: 37 [Oct 29 18:01:47.121380] E-ID: 19   recived at ( 3, 7)
+ID: 36 [Oct 29 18:01:47.172004] E-ID:  8    send from ( 3, 6) to ( 2, 6) [N]
+ID: 26 [Oct 29 18:01:47.172020] E-ID:  8   recived at ( 2, 6)
+ID: 73 [Oct 29 18:01:47.222095] E-ID: 16    send from ( 7, 3) to ( 7, 2) [W]
+ID: 72 [Oct 29 18:01:47.222120] E-ID: 16   recived at ( 7, 2)
+ID: 32 [Oct 29 18:01:47.222130] E-ID: 40    send from ( 3, 2) to ( 3, 1) [W]
+ID: 31 [Oct 29 18:01:47.222131] E-ID: 40   recived at ( 3, 1)
+ID: 27 [Oct 29 18:01:47.222137] E-ID:  9    send from ( 2, 7) to ( 2, 8) [E]
+ID: 28 [Oct 29 18:01:47.222138] E-ID:  9   recived at ( 2, 8)
+ID: 18 [Oct 29 18:01:47.222150] E-ID: 42   spawned at ( 1, 8)
+ID: 96 [Oct 29 18:01:47.222170] E-ID: 26    send from ( 9, 6) to ( 9, 5) [W]
+ID: 95 [Oct 29 18:01:47.222171] E-ID: 26   recived at ( 9, 5)
+ID: 76 [Oct 29 18:01:47.222173] E-ID: 18    send from ( 7, 6) to ( 7, 7) [E]
+ID: 77 [Oct 29 18:01:47.222174] E-ID: 18   recived at ( 7, 7)
+ID: 11 [Oct 29 18:01:47.222185] E-ID: 21    send from ( 1, 1) to ( 1, 2) [E]
+ID: 12 [Oct 29 18:01:47.222186] E-ID: 21   recived at ( 1, 2)
+ID: 87 [Oct 29 18:01:47.272431] E-ID:  3    send from ( 8, 7) to ( 9, 7) [S]
+ID: 97 [Oct 29 18:01:47.272456] E-ID:  3   recived at ( 9, 7)
+ID: 42 [Oct 29 18:01:47.272519] E-ID: 41    send from ( 4, 2) to ( 4, 3) [E]
+ID: 43 [Oct 29 18:01:47.272531] E-ID: 41   recived at ( 4, 3)
+ID: 96 [Oct 29 18:01:47.272541] E-ID: 43   spawned at ( 9, 6)
+ID: 12 [Oct 29 18:01:47.272541] E-ID: 21    send from ( 1, 2) to ( 1, 3) [E]
+ID: 13 [Oct 29 18:01:47.272542] E-ID: 21   recived at ( 1, 3)
+ID: 18 [Oct 29 18:01:47.322665] E-ID: 42    send from ( 1, 8) to ( 1, 9) [E]
+ID: 40 [Oct 29 18:01:47.322680] E-ID: 32    send from ( 4, 0) to ( 5, 0) [S]
+ID: 63 [Oct 29 18:01:47.322690] E-ID: 27    send from ( 6, 3) to ( 6, 4) [E]
+ID: 19 [Oct 29 18:01:47.322691] E-ID: 42   recived at ( 1, 9)
+ID: 50 [Oct 29 18:01:47.322692] E-ID: 32   recived at ( 5, 0)
+ID: 72 [Oct 29 18:01:47.322701] E-ID: 16    send from ( 7, 2) to ( 7, 3) [E]
+ID: 64 [Oct 29 18:01:47.322705] E-ID: 27   recived at ( 6, 4)
+ID: 73 [Oct 29 18:01:47.322706] E-ID: 16   recived at ( 7, 3)
+ID:  8 [Oct 29 18:01:47.372858] E-ID: 44   spawned at ( 0, 8)
+ID:  1 [Oct 29 18:01:47.372871] E-ID: 45   spawned at ( 0, 1)
+ID: 97 [Oct 29 18:01:47.372880] E-ID:  3    send from ( 9, 7) to ( 8, 7) [N]
+ID: 87 [Oct 29 18:01:47.372889] E-ID:  3   recived at ( 8, 7)
+ID: 69 [Oct 29 18:01:47.372910] E-ID: 10    send from ( 6, 9) to ( 7, 9) [S]
+ID: 26 [Oct 29 18:01:47.372917] E-ID:  8    send from ( 2, 6) to ( 2, 5) [W]
+ID: 39 [Oct 29 18:01:47.372927] E-ID: 11    send from ( 3, 9) to ( 3, 8) [W]
+ID: 79 [Oct 29 18:01:47.372933] E-ID: 10   recived at ( 7, 9)
+ID: 25 [Oct 29 18:01:47.372935] E-ID:  8   recived at ( 2, 5)
+ID: 38 [Oct 29 18:01:47.372937] E-ID: 11   recived at ( 3, 8)
+ID: 94 [Oct 29 18:01:47.423223] E-ID: 46   spawned at ( 9, 4)
+ID: 44 [Oct 29 18:01:47.423293] E-ID: 12    send from ( 4, 4) to ( 4, 5) [E]
+ID: 45 [Oct 29 18:01:47.423305] E-ID: 12   recived at ( 4, 5)
+ID: 21 [Oct 29 18:01:47.473815] E-ID: 28    send from ( 2, 1) to ( 2, 0) [W]
+ID: 20 [Oct 29 18:01:47.473829] E-ID: 28   recived at ( 2, 0)
+ID: 96 [Oct 29 18:01:47.473879] E-ID: 43    send from ( 9, 6) to ( 9, 7) [E]
+ID: 38 [Oct 29 18:01:47.473883] E-ID: 11    send from ( 3, 8) to ( 3, 9) [E]
+ID: 97 [Oct 29 18:01:47.473883] E-ID: 43   recived at ( 9, 7)
+ID: 39 [Oct 29 18:01:47.473885] E-ID: 11   recived at ( 3, 9)
+ID: 62 [Oct 29 18:01:47.524162] E-ID: 47   spawned at ( 6, 2)
+ID:  1 [Oct 29 18:01:47.524203] E-ID: 45    send from ( 0, 1) to ( 1, 1) [S]
+ID: 11 [Oct 29 18:01:47.524221] E-ID: 45   recived at ( 1, 1)
+ID: 15 [Oct 29 18:01:47.524226] E-ID: 48   spawned at ( 1, 5)
+ID: 33 [Oct 29 18:01:47.524227] E-ID: 24    send from ( 3, 3) to ( 3, 4) [E]
+ID: 34 [Oct 29 18:01:47.524228] E-ID: 24   recived at ( 3, 4)
+ID: 97 [Oct 29 18:01:47.524248] E-ID: 43    send from ( 9, 7) to ( 9, 6) [W]
+ID: 96 [Oct 29 18:01:47.524249] E-ID: 43   recived at ( 9, 6)
+ID: 64 [Oct 29 18:01:47.575014] E-ID: 27    send from ( 6, 4) to ( 7, 4) [S]
+ID: 13 [Oct 29 18:01:47.575028] E-ID: 21    send from ( 1, 3) to ( 1, 4) [E]
+ID: 75 [Oct 29 18:01:47.575032] E-ID: 49   spawned at ( 7, 5)
+ID: 92 [Oct 29 18:01:47.575035] E-ID: 17    send from ( 9, 2) to ( 8, 2) [N]
+ID: 66 [Oct 29 18:01:47.575042] E-ID: 23    send from ( 6, 6) to ( 6, 5) [W]
+ID: 19 [Oct 29 18:01:47.575058] E-ID: 42    send from ( 1, 9) to ( 1, 8) [W]
+ID: 14 [Oct 29 18:01:47.575139] E-ID: 21   recived at ( 1, 4)
+ID: 74 [Oct 29 18:01:47.575142] E-ID: 27   recived at ( 7, 4)
+ID: 65 [Oct 29 18:01:47.575143] E-ID: 23   recived at ( 6, 5)
+ID: 82 [Oct 29 18:01:47.575143] E-ID: 17   recived at ( 8, 2)
+ID: 18 [Oct 29 18:01:47.575144] E-ID: 42   recived at ( 1, 8)
+ID: 11 [Oct 29 18:01:47.625913] E-ID: 45    send from ( 1, 1) to ( 0, 1) [N]
+ID: 57 [Oct 29 18:01:47.625958] E-ID: 29    send from ( 5, 7) to ( 5, 6) [W]
+ID: 22 [Oct 29 18:01:47.625964] E-ID:  4    send from ( 2, 2) to ( 3, 2) [S]
+ID: 31 [Oct 29 18:01:47.625969] E-ID: 40    send from ( 3, 1) to ( 3, 0) [W]
+ID:  1 [Oct 29 18:01:47.625969] E-ID: 45   recived at ( 0, 1)
+ID: 56 [Oct 29 18:01:47.625973] E-ID: 29   recived at ( 5, 6)
+ID: 32 [Oct 29 18:01:47.625973] E-ID:  4   recived at ( 3, 2)
+ID: 30 [Oct 29 18:01:47.625974] E-ID: 40   recived at ( 3, 0)
+ID: 18 [Oct 29 18:01:47.676302] E-ID: 42    send from ( 1, 8) to ( 1, 9) [E]
+ID: 20 [Oct 29 18:01:47.676320] E-ID: 28    send from ( 2, 0) to ( 2, 1) [E]
+ID: 86 [Oct 29 18:01:47.676327] E-ID: 31    send from ( 8, 6) to ( 7, 6) [N]
+ID: 19 [Oct 29 18:01:47.676342] E-ID: 42   recived at ( 1, 9)
+ID: 21 [Oct 29 18:01:47.676344] E-ID: 28   recived at ( 2, 1)
+ID: 76 [Oct 29 18:01:47.676346] E-ID: 31   recived at ( 7, 6)
+ID: 50 [Oct 29 18:01:47.676427] E-ID: 32    send from ( 5, 0) to ( 4, 0) [N]
+ID: 40 [Oct 29 18:01:47.676443] E-ID: 32   recived at ( 4, 0)
+ID: 94 [Oct 29 18:01:47.676445] E-ID: 46    send from ( 9, 4) to ( 9, 3) [W]
+ID: 93 [Oct 29 18:01:47.676446] E-ID: 46   recived at ( 9, 3)
+ID: 45 [Oct 29 18:01:47.727195] E-ID: 12    send from ( 4, 5) to ( 4, 4) [W]
+ID: 35 [Oct 29 18:01:47.727207] E-ID: 33    send from ( 3, 5) to ( 3, 6) [E]
+ID:  8 [Oct 29 18:01:47.727216] E-ID: 44    send from ( 0, 8) to ( 1, 8) [S]
+ID: 86 [Oct 29 18:01:47.727222] E-ID: 50   spawned at ( 8, 6)
+ID: 36 [Oct 29 18:01:47.727235] E-ID: 33   recived at ( 3, 6)
+ID: 18 [Oct 29 18:01:47.727237] E-ID: 44   recived at ( 1, 8)
+ID: 76 [Oct 29 18:01:47.727240] E-ID: 31    send from ( 7, 6) to ( 6, 6) [N]
+ID: 66 [Oct 29 18:01:47.727243] E-ID: 31   recived at ( 6, 6)
+ID: 44 [Oct 29 18:01:47.727258] E-ID: 12   recived at ( 4, 4)
+ID: 51 [Oct 29 18:01:47.727280] E-ID: 15    send from ( 5, 1) to ( 6, 1) [S]
+ID: 61 [Oct 29 18:01:47.727283] E-ID: 15   recived at ( 6, 1)
+ID: 95 [Oct 29 18:01:47.727328] E-ID: 26    send from ( 9, 5) to ( 8, 5) [N]
+ID: 85 [Oct 29 18:01:47.727346] E-ID: 26   recived at ( 8, 5)
+ID: 77 [Oct 29 18:01:47.778194] E-ID: 18    send from ( 7, 7) to ( 7, 8) [E]
+ID: 78 [Oct 29 18:01:47.778236] E-ID: 18   recived at ( 7, 8)
+ID: 34 [Oct 29 18:01:47.778356] E-ID: 24    send from ( 3, 4) to ( 3, 3) [W]
+ID: 28 [Oct 29 18:01:47.778436] E-ID:  9    send from ( 2, 8) to ( 3, 8) [S]
+ID: 33 [Oct 29 18:01:47.778440] E-ID: 24   recived at ( 3, 3)
+ID: 38 [Oct 29 18:01:47.778462] E-ID:  9   recived at ( 3, 8)
+ID: 68 [Oct 29 18:01:47.778471] E-ID: 30    send from ( 6, 8) to ( 5, 8) [N]
+ID: 51 [Oct 29 18:01:47.778478] E-ID: 51   spawned at ( 5, 1)
+ID: 58 [Oct 29 18:01:47.778478] E-ID: 30   recived at ( 5, 8)
+ID: 58 [Oct 29 18:01:47.828733] E-ID: 30    send from ( 5, 8) to ( 5, 9) [E]
+ID: 59 [Oct 29 18:01:47.828749] E-ID: 30   recived at ( 5, 9)
+ID: 10 [Oct 29 18:01:47.828798] E-ID:  6    send from ( 1, 0) to ( 1, 1) [E]
+ID: 11 [Oct 29 18:01:47.828805] E-ID:  6   recived at ( 1, 1)
+ID: 40 [Oct 29 18:01:47.828916] E-ID: 32    send from ( 4, 0) to ( 5, 0) [S]
+ID: 50 [Oct 29 18:01:47.828925] E-ID: 32   recived at ( 5, 0)
+ID: 61 [Oct 29 18:01:47.879217] E-ID: 15    send from ( 6, 1) to ( 6, 0) [W]
+ID: 65 [Oct 29 18:01:47.879248] E-ID: 23    send from ( 6, 5) to ( 5, 5) [N]
+ID: 60 [Oct 29 18:01:47.879264] E-ID: 15   recived at ( 6, 0)
+ID: 55 [Oct 29 18:01:47.879267] E-ID: 23   recived at ( 5, 5)
+ID: 14 [Oct 29 18:01:47.879325] E-ID: 21    send from ( 1, 4) to ( 2, 4) [S]
+ID: 24 [Oct 29 18:01:47.879342] E-ID: 21   recived at ( 2, 4)
+ID: 50 [Oct 29 18:01:47.879377] E-ID: 32    send from ( 5, 0) to ( 4, 0) [N]
+ID: 79 [Oct 29 18:01:47.879398] E-ID: 10    send from ( 7, 9) to ( 6, 9) [N]
+ID: 40 [Oct 29 18:01:47.879450] E-ID: 32   recived at ( 4, 0)
+ID: 69 [Oct 29 18:01:47.879455] E-ID: 10   recived at ( 6, 9)
+ID: 99 [Oct 29 18:01:47.980051] E-ID: 37    send from ( 9, 9) to ( 8, 9) [N]
+ID:  4 [Oct 29 18:01:47.980080] E-ID: 52   spawned at ( 0, 4)
+ID: 23 [Oct 29 18:01:47.980116] E-ID: 22    send from ( 2, 3) to ( 1, 3) [N]
+ID: 89 [Oct 29 18:01:47.980136] E-ID: 37   recived at ( 8, 9)
+ID: 13 [Oct 29 18:01:47.980138] E-ID: 22   recived at ( 1, 3)
+ID: 62 [Oct 29 18:01:47.980162] E-ID: 47    send from ( 6, 2) to ( 6, 3) [E]
+ID: 39 [Oct 29 18:01:47.980192] E-ID: 11    send from ( 3, 9) to ( 4, 9) [S]
+ID: 63 [Oct 29 18:01:47.980202] E-ID: 47   recived at ( 6, 3)
+ID: 49 [Oct 29 18:01:47.980205] E-ID: 11   recived at ( 4, 9)
+ID: 98 [Oct 29 18:01:48.030669] E-ID: 36    send from ( 9, 8) to ( 9, 7) [W]
+ID: 97 [Oct 29 18:01:48.030687] E-ID: 36   recived at ( 9, 7)
+ID: 96 [Oct 29 18:01:48.030751] E-ID: 43    send from ( 9, 6) to ( 9, 5) [W]
+ID: 24 [Oct 29 18:01:48.030762] E-ID: 21    send from ( 2, 4) to ( 3, 4) [S]
+ID: 21 [Oct 29 18:01:48.030765] E-ID: 28    send from ( 2, 1) to ( 3, 1) [S]
+ID: 31 [Oct 29 18:01:48.030766] E-ID: 28   recived at ( 3, 1)
+ID: 38 [Oct 29 18:01:48.030768] E-ID:  9    send from ( 3, 8) to ( 2, 8) [N]
+ID: 54 [Oct 29 18:01:48.030773] E-ID: 14    send from ( 5, 4) to ( 6, 4) [S]
+ID: 95 [Oct 29 18:01:48.030777] E-ID: 43   recived at ( 9, 5)
+ID: 28 [Oct 29 18:01:48.030779] E-ID:  9   recived at ( 2, 8)
+ID: 64 [Oct 29 18:01:48.030781] E-ID: 14   recived at ( 6, 4)
+ID: 34 [Oct 29 18:01:48.030784] E-ID: 21   recived at ( 3, 4)
+ID:  8 [Oct 29 18:01:48.081741] E-ID: 53   spawned at ( 0, 8)
+ID: 48 [Oct 29 18:01:48.081756] E-ID: 39    send from ( 4, 8) to ( 3, 8) [N]
+ID: 66 [Oct 29 18:01:48.081768] E-ID: 31    send from ( 6, 6) to ( 7, 6) [S]
+ID: 35 [Oct 29 18:01:48.081772] E-ID: 54   spawned at ( 3, 5)
+ID: 13 [Oct 29 18:01:48.081791] E-ID: 22    send from ( 1, 3) to ( 1, 4) [E]
+ID: 56 [Oct 29 18:01:48.081797] E-ID: 29    send from ( 5, 6) to ( 4, 6) [N]
+ID: 38 [Oct 29 18:01:48.081803] E-ID: 39   recived at ( 3, 8)
+ID: 76 [Oct 29 18:01:48.081805] E-ID: 31   recived at ( 7, 6)
+ID: 14 [Oct 29 18:01:48.081807] E-ID: 22   recived at ( 1, 4)
+ID: 46 [Oct 29 18:01:48.081809] E-ID: 29   recived at ( 4, 6)
+ID: 46 [Oct 29 18:01:48.132189] E-ID: 29    send from ( 4, 6) to ( 4, 5) [W]
+ID: 95 [Oct 29 18:01:48.132220] E-ID: 43    send from ( 9, 5) to ( 9, 4) [W]
+ID: 45 [Oct 29 18:01:48.132226] E-ID: 29   recived at ( 4, 5)
+ID: 94 [Oct 29 18:01:48.132228] E-ID: 43   recived at ( 9, 4)
+ID:  8 [Oct 29 18:01:48.182365] E-ID: 53    send from ( 0, 8) to ( 0, 7) [W]
+ID:  5 [Oct 29 18:01:48.182393] E-ID: 25    send from ( 0, 5) to ( 0, 6) [E]
+ID: 52 [Oct 29 18:01:48.182414] E-ID:  2    send from ( 5, 2) to ( 6, 2) [S]
+ID: 37 [Oct 29 18:01:48.182417] E-ID: 19    send from ( 3, 7) to ( 4, 7) [S]
+ID: 44 [Oct 29 18:01:48.182437] E-ID: 12    send from ( 4, 4) to ( 5, 4) [S]
+ID:  7 [Oct 29 18:01:48.182447] E-ID: 53   recived at ( 0, 7)
+ID:  6 [Oct 29 18:01:48.182450] E-ID: 25   recived at ( 0, 6)
+ID: 25 [Oct 29 18:01:48.182450] E-ID:  8    send from ( 2, 5) to ( 2, 4) [W]
+ID: 24 [Oct 29 18:01:48.182451] E-ID:  8   recived at ( 2, 4)
+ID: 62 [Oct 29 18:01:48.182454] E-ID:  2   recived at ( 6, 2)
+ID: 47 [Oct 29 18:01:48.182456] E-ID: 19   recived at ( 4, 7)
+ID: 54 [Oct 29 18:01:48.182457] E-ID: 12   recived at ( 5, 4)
+ID: 15 [Oct 29 18:01:48.232931] E-ID: 48    send from ( 1, 5) to ( 2, 5) [S]
+ID: 31 [Oct 29 18:01:48.232971] E-ID: 28    send from ( 3, 1) to ( 2, 1) [N]
+ID: 51 [Oct 29 18:01:48.232982] E-ID: 51    send from ( 5, 1) to ( 5, 0) [W]
+ID: 25 [Oct 29 18:01:48.232987] E-ID: 48   recived at ( 2, 5)
+ID: 21 [Oct 29 18:01:48.232989] E-ID: 28   recived at ( 2, 1)
+ID: 50 [Oct 29 18:01:48.232991] E-ID: 51   recived at ( 5, 0)
+ID: 87 [Oct 29 18:01:48.233001] E-ID:  3    send from ( 8, 7) to ( 8, 8) [E]
+ID: 53 [Oct 29 18:01:48.233004] E-ID:  7    send from ( 5, 3) to ( 5, 2) [W]
+ID: 88 [Oct 29 18:01:48.233004] E-ID:  3   recived at ( 8, 8)
+ID: 52 [Oct 29 18:01:48.233006] E-ID:  7   recived at ( 5, 2)
+ID: 32 [Oct 29 18:01:48.283355] E-ID:  4    send from ( 3, 2) to ( 4, 2) [S]
+ID: 42 [Oct 29 18:01:48.283420] E-ID:  4   recived at ( 4, 2)
+ID:  9 [Oct 29 18:01:48.283494] E-ID: 38    send from ( 0, 9) to ( 0, 8) [W]
+ID:  8 [Oct 29 18:01:48.283496] E-ID: 38   recived at ( 0, 8)
+ID:  7 [Oct 29 18:01:48.283501] E-ID: 53    send from ( 0, 7) to ( 1, 7) [S]
+ID: 17 [Oct 29 18:01:48.283502] E-ID: 53   recived at ( 1, 7)
+ID: 29 [Oct 29 18:01:48.283511] E-ID: 35    send from ( 2, 9) to ( 3, 9) [S]
+ID: 39 [Oct 29 18:01:48.283511] E-ID: 35   recived at ( 3, 9)
+ID:  6 [Oct 29 18:01:48.334080] E-ID: 25    send from ( 0, 6) to ( 0, 7) [E]
+ID: 47 [Oct 29 18:01:48.334092] E-ID: 19    send from ( 4, 7) to ( 3, 7) [N]
+ID:  4 [Oct 29 18:01:48.334099] E-ID: 52    send from ( 0, 4) to ( 0, 5) [E]
+ID:  7 [Oct 29 18:01:48.334105] E-ID: 25   recived at ( 0, 7)
+ID:  5 [Oct 29 18:01:48.334107] E-ID: 52   recived at ( 0, 5)
+ID: 37 [Oct 29 18:01:48.334130] E-ID: 19   recived at ( 3, 7)
+ID: 91 [Oct 29 18:01:48.334145] E-ID: 55   spawned at ( 9, 1)
+ID: 41 [Oct 29 18:01:48.334149] E-ID:  5    send from ( 4, 1) to ( 5, 1) [S]
+ID: 51 [Oct 29 18:01:48.334156] E-ID:  5   recived at ( 5, 1)
+ID: 58 [Oct 29 18:01:48.385021] E-ID: 56   spawned at ( 5, 8)
+ID: 45 [Oct 29 18:01:48.385043] E-ID: 29    send from ( 4, 5) to ( 4, 4) [W]
+ID: 47 [Oct 29 18:01:48.385054] E-ID: 57   spawned at ( 4, 7)
+ID: 86 [Oct 29 18:01:48.385065] E-ID: 50    send from ( 8, 6) to ( 8, 7) [E]
+ID: 76 [Oct 29 18:01:48.385070] E-ID: 31    send from ( 7, 6) to ( 8, 6) [S]
+ID: 82 [Oct 29 18:01:48.385079] E-ID: 17    send from ( 8, 2) to ( 9, 2) [S]
+ID: 11 [Oct 29 18:01:48.385084] E-ID:  6    send from ( 1, 1) to ( 1, 2) [E]
+ID: 44 [Oct 29 18:01:48.385104] E-ID: 29   recived at ( 4, 4)
+ID: 87 [Oct 29 18:01:48.385106] E-ID: 50   recived at ( 8, 7)
+ID: 86 [Oct 29 18:01:48.385108] E-ID: 31   recived at ( 8, 6)
+ID: 92 [Oct 29 18:01:48.385109] E-ID: 17   recived at ( 9, 2)
+ID: 12 [Oct 29 18:01:48.385111] E-ID:  6   recived at ( 1, 2)
+ID:  1 [Oct 29 18:01:48.435708] E-ID: 45    send from ( 0, 1) to ( 0, 2) [E]
+ID:  2 [Oct 29 18:01:48.435728] E-ID: 45   recived at ( 0, 2)
+ID: 78 [Oct 29 18:01:48.486089] E-ID: 18    send from ( 7, 8) to ( 7, 7) [W]
+ID: 14 [Oct 29 18:01:48.486101] E-ID: 22    send from ( 1, 4) to ( 1, 5) [E]
+ID: 63 [Oct 29 18:01:48.486128] E-ID: 47    send from ( 6, 3) to ( 5, 3) [N]
+ID: 40 [Oct 29 18:01:48.486140] E-ID: 32    send from ( 4, 0) to ( 4, 1) [E]
+ID: 77 [Oct 29 18:01:48.486148] E-ID: 18   recived at ( 7, 7)
+ID: 15 [Oct 29 18:01:48.486151] E-ID: 22   recived at ( 1, 5)
+ID: 53 [Oct 29 18:01:48.486152] E-ID: 47   recived at ( 5, 3)
+ID: 41 [Oct 29 18:01:48.486154] E-ID: 32   recived at ( 4, 1)
+ID: 30 [Oct 29 18:01:48.536400] E-ID: 40    send from ( 3, 0) to ( 4, 0) [S]
+ID: 40 [Oct 29 18:01:48.536419] E-ID: 40   recived at ( 4, 0)
+ID: 12 [Oct 29 18:01:48.536495] E-ID:  6    send from ( 1, 2) to ( 2, 2) [S]
+ID: 22 [Oct 29 18:01:48.536549] E-ID:  6   recived at ( 2, 2)
+ID:  7 [Oct 29 18:01:48.587013] E-ID: 25    send from ( 0, 7) to ( 0, 6) [W]
+ID: 44 [Oct 29 18:01:48.587030] E-ID: 29    send from ( 4, 4) to ( 4, 5) [E]
+ID: 97 [Oct 29 18:01:48.587036] E-ID: 36    send from ( 9, 7) to ( 9, 8) [E]
+ID: 77 [Oct 29 18:01:48.587043] E-ID: 18    send from ( 7, 7) to ( 7, 6) [W]
+ID: 53 [Oct 29 18:01:48.587047] E-ID: 47    send from ( 5, 3) to ( 6, 3) [S]
+ID:  6 [Oct 29 18:01:48.587049] E-ID: 25   recived at ( 0, 6)
+ID: 45 [Oct 29 18:01:48.587052] E-ID: 29   recived at ( 4, 5)
+ID: 98 [Oct 29 18:01:48.587053] E-ID: 36   recived at ( 9, 8)
+ID: 76 [Oct 29 18:01:48.587055] E-ID: 18   recived at ( 7, 6)
+ID: 63 [Oct 29 18:01:48.587057] E-ID: 47   recived at ( 6, 3)
+ID: 85 [Oct 29 18:01:48.637358] E-ID: 26    send from ( 8, 5) to ( 9, 5) [S]
+ID: 38 [Oct 29 18:01:48.637383] E-ID: 39    send from ( 3, 8) to ( 4, 8) [S]
+ID: 95 [Oct 29 18:01:48.637386] E-ID: 26   recived at ( 9, 5)
+ID: 48 [Oct 29 18:01:48.637388] E-ID: 39   recived at ( 4, 8)
+ID: 41 [Oct 29 18:01:48.637395] E-ID: 32    send from ( 4, 1) to ( 3, 1) [N]
+ID: 31 [Oct 29 18:01:48.637397] E-ID: 32   recived at ( 3, 1)
+ID:  6 [Oct 29 18:01:48.637400] E-ID: 25    send from ( 0, 6) to ( 1, 6) [S]
+ID: 63 [Oct 29 18:01:48.637403] E-ID: 47    send from ( 6, 3) to ( 5, 3) [N]
+ID: 53 [Oct 29 18:01:48.637406] E-ID: 47   recived at ( 5, 3)
+ID: 16 [Oct 29 18:01:48.637409] E-ID: 25   recived at ( 1, 6)
+ID: 28 [Oct 29 18:01:48.688028] E-ID:  9    send from ( 2, 8) to ( 2, 9) [E]
+ID: 47 [Oct 29 18:01:48.688048] E-ID: 57    send from ( 4, 7) to ( 5, 7) [S]
+ID: 29 [Oct 29 18:01:48.688067] E-ID:  9   recived at ( 2, 9)
+ID: 57 [Oct 29 18:01:48.688070] E-ID: 57   recived at ( 5, 7)
+ID: 97 [Oct 29 18:01:48.688084] E-ID: 58   spawned at ( 9, 7)
+ID: 16 [Oct 29 18:01:48.688099] E-ID: 25    send from ( 1, 6) to ( 2, 6) [S]
+ID: 83 [Oct 29 18:01:48.688109] E-ID: 13    send from ( 8, 3) to ( 8, 2) [W]
+ID: 67 [Oct 29 18:01:48.688120] E-ID: 59   spawned at ( 6, 7)
+ID: 98 [Oct 29 18:01:48.688126] E-ID: 36    send from ( 9, 8) to ( 9, 9) [E]
+ID: 82 [Oct 29 18:01:48.688128] E-ID: 13   recived at ( 8, 2)
+ID: 99 [Oct 29 18:01:48.688130] E-ID: 36   recived at ( 9, 9)
+ID: 26 [Oct 29 18:01:48.688150] E-ID: 25   recived at ( 2, 6)
+ID: 69 [Oct 29 18:01:48.738470] E-ID: 10    send from ( 6, 9) to ( 7, 9) [S]
+ID: 79 [Oct 29 18:01:48.738488] E-ID: 10   recived at ( 7, 9)
+ID: 55 [Oct 29 18:01:48.738651] E-ID: 23    send from ( 5, 5) to ( 5, 6) [E]
+ID:  0 [Oct 29 18:01:48.738680] E-ID: 60   spawned at ( 0, 0)
+ID: 90 [Oct 29 18:01:48.738701] E-ID: 61   spawned at ( 9, 0)
+ID:  8 [Oct 29 18:01:48.738708] E-ID: 38    send from ( 0, 8) to ( 0, 9) [E]
+ID: 56 [Oct 29 18:01:48.738714] E-ID: 23   recived at ( 5, 6)
+ID:  9 [Oct 29 18:01:48.738716] E-ID: 38   recived at ( 0, 9)
+ID: 33 [Oct 29 18:01:48.788878] E-ID: 24    send from ( 3, 3) to ( 3, 2) [W]
+ID: 59 [Oct 29 18:01:48.788900] E-ID: 30    send from ( 5, 9) to ( 6, 9) [S]
+ID: 32 [Oct 29 18:01:48.788933] E-ID: 24   recived at ( 3, 2)
+ID: 69 [Oct 29 18:01:48.788936] E-ID: 30   recived at ( 6, 9)
+ID: 45 [Oct 29 18:01:48.788939] E-ID: 29    send from ( 4, 5) to ( 4, 4) [W]
+ID: 48 [Oct 29 18:01:48.788947] E-ID: 39    send from ( 4, 8) to ( 4, 7) [W]
+ID: 44 [Oct 29 18:01:48.788954] E-ID: 29   recived at ( 4, 4)
+ID: 47 [Oct 29 18:01:48.788954] E-ID: 39   recived at ( 4, 7)
+ID: 97 [Oct 29 18:01:48.838984] E-ID: 58    send from ( 9, 7) to ( 9, 6) [W]
+ID: 96 [Oct 29 18:01:48.838997] E-ID: 58   recived at ( 9, 6)
+ID: 37 [Oct 29 18:01:48.839057] E-ID: 19    send from ( 3, 7) to ( 2, 7) [N]
+ID: 43 [Oct 29 18:01:48.839067] E-ID: 41    send from ( 4, 3) to ( 3, 3) [N]
+ID: 27 [Oct 29 18:01:48.839074] E-ID: 19   recived at ( 2, 7)
+ID: 33 [Oct 29 18:01:48.839077] E-ID: 41   recived at ( 3, 3)
+ID: 62 [Oct 29 18:01:48.839172] E-ID:  2    send from ( 6, 2) to ( 7, 2) [S]
+ID: 67 [Oct 29 18:01:48.839187] E-ID: 59    send from ( 6, 7) to ( 6, 6) [W]
+ID: 53 [Oct 29 18:01:48.839193] E-ID: 47    send from ( 5, 3) to ( 4, 3) [N]
+ID: 77 [Oct 29 18:01:48.839203] E-ID: 62   spawned at ( 7, 7)
+ID: 31 [Oct 29 18:01:48.839207] E-ID: 32    send from ( 3, 1) to ( 4, 1) [S]
+ID: 72 [Oct 29 18:01:48.839209] E-ID:  2   recived at ( 7, 2)
+ID: 66 [Oct 29 18:01:48.839211] E-ID: 59   recived at ( 6, 6)
+ID: 43 [Oct 29 18:01:48.839213] E-ID: 47   recived at ( 4, 3)
+ID: 41 [Oct 29 18:01:48.839215] E-ID: 32   recived at ( 4, 1)
+ID: 93 [Oct 29 18:01:48.839224] E-ID: 46    send from ( 9, 3) to ( 8, 3) [N]
+ID: 83 [Oct 29 18:01:48.839226] E-ID: 46   recived at ( 8, 3)
+ID: 60 [Oct 29 18:01:48.889265] E-ID: 15    send from ( 6, 0) to ( 6, 1) [E]
+ID: 61 [Oct 29 18:01:48.889322] E-ID: 15   recived at ( 6, 1)
+ID:  3 [Oct 29 18:01:48.889355] E-ID: 34    send from ( 0, 3) to ( 0, 4) [E]
+ID:  4 [Oct 29 18:01:48.889363] E-ID: 34   recived at ( 0, 4)
+ID: 57 [Oct 29 18:01:48.939956] E-ID: 57    send from ( 5, 7) to ( 6, 7) [S]
+ID: 33 [Oct 29 18:01:48.940010] E-ID: 41    send from ( 3, 3) to ( 2, 3) [N]
+ID: 67 [Oct 29 18:01:48.940012] E-ID: 57   recived at ( 6, 7)
+ID: 75 [Oct 29 18:01:48.940014] E-ID: 49    send from ( 7, 5) to ( 6, 5) [N]
+ID: 65 [Oct 29 18:01:48.940015] E-ID: 49   recived at ( 6, 5)
+ID: 23 [Oct 29 18:01:48.940017] E-ID: 41   recived at ( 2, 3)
+ID: 58 [Oct 29 18:01:48.990727] E-ID: 56    send from ( 5, 8) to ( 4, 8) [N]
+ID: 34 [Oct 29 18:01:48.990743] E-ID: 21    send from ( 3, 4) to ( 3, 3) [W]
+ID: 87 [Oct 29 18:01:48.990792] E-ID: 50    send from ( 8, 7) to ( 9, 7) [S]
+ID: 97 [Oct 29 18:01:48.990793] E-ID: 50   recived at ( 9, 7)
+ID: 86 [Oct 29 18:01:48.990801] E-ID: 31    send from ( 8, 6) to ( 8, 7) [E]
+ID: 87 [Oct 29 18:01:48.990802] E-ID: 31   recived at ( 8, 7)
+ID: 67 [Oct 29 18:01:48.990814] E-ID: 57    send from ( 6, 7) to ( 5, 7) [N]
+ID: 57 [Oct 29 18:01:48.990815] E-ID: 57   recived at ( 5, 7)
+ID: 48 [Oct 29 18:01:48.990822] E-ID: 56   recived at ( 4, 8)
+ID: 33 [Oct 29 18:01:48.990823] E-ID: 21   recived at ( 3, 3)
+ID: 41 [Oct 29 18:01:48.990842] E-ID: 32    send from ( 4, 1) to ( 3, 1) [N]
+ID: 31 [Oct 29 18:01:48.990843] E-ID: 32   recived at ( 3, 1)
+ID: 80 [Oct 29 18:01:48.990844] E-ID:  1    send from ( 8, 0) to ( 8, 1) [E]
+ID: 81 [Oct 29 18:01:48.990845] E-ID:  1   recived at ( 8, 1)
+ID: 69 [Oct 29 18:01:49.041337] E-ID: 30    send from ( 6, 9) to ( 5, 9) [N]
+ID: 15 [Oct 29 18:01:49.041378] E-ID: 22    send from ( 1, 5) to ( 1, 4) [W]
+ID: 72 [Oct 29 18:01:49.041384] E-ID:  2    send from ( 7, 2) to ( 6, 2) [N]
+ID:  4 [Oct 29 18:01:49.041389] E-ID: 34    send from ( 0, 4) to ( 0, 3) [W]
+ID:  3 [Oct 29 18:01:49.041390] E-ID: 34   recived at ( 0, 3)
+ID: 59 [Oct 29 18:01:49.041413] E-ID: 30   recived at ( 5, 9)
+ID: 14 [Oct 29 18:01:49.041413] E-ID: 22   recived at ( 1, 4)
+ID: 62 [Oct 29 18:01:49.041414] E-ID:  2   recived at ( 6, 2)
+ID: 88 [Oct 29 18:01:49.091896] E-ID:  3    send from ( 8, 8) to ( 7, 8) [N]
+ID: 47 [Oct 29 18:01:49.091931] E-ID: 39    send from ( 4, 7) to ( 3, 7) [N]
+ID: 78 [Oct 29 18:01:49.091959] E-ID:  3   recived at ( 7, 8)
+ID: 37 [Oct 29 18:01:49.091961] E-ID: 39   recived at ( 3, 7)
+ID: 44 [Oct 29 18:01:49.091972] E-ID: 29    send from ( 4, 4) to ( 3, 4) [N]
+ID: 34 [Oct 29 18:01:49.091976] E-ID: 29   recived at ( 3, 4)
+ID: 87 [Oct 29 18:01:49.142465] E-ID: 31    send from ( 8, 7) to ( 8, 6) [W]
+ID: 62 [Oct 29 18:01:49.142511] E-ID:  2    send from ( 6, 2) to ( 6, 3) [E]
+ID: 36 [Oct 29 18:01:49.142526] E-ID: 33    send from ( 3, 6) to ( 4, 6) [S]
+ID: 86 [Oct 29 18:01:49.142537] E-ID: 31   recived at ( 8, 6)
+ID: 63 [Oct 29 18:01:49.142537] E-ID:  2   recived at ( 6, 3)
+ID: 46 [Oct 29 18:01:49.142538] E-ID: 33   recived at ( 4, 6)
+ID:  0 [Oct 29 18:01:49.193115] E-ID: 60    send from ( 0, 0) to ( 0, 1) [E]
+ID: 61 [Oct 29 18:01:49.193142] E-ID: 15    send from ( 6, 1) to ( 7, 1) [S]
+ID: 54 [Oct 29 18:01:49.193151] E-ID: 12    send from ( 5, 4) to ( 5, 3) [W]
+ID: 79 [Oct 29 18:01:49.193156] E-ID: 10    send from ( 7, 9) to ( 6, 9) [N]
+ID: 39 [Oct 29 18:01:49.193161] E-ID: 35    send from ( 3, 9) to ( 3, 8) [W]
+ID:  1 [Oct 29 18:01:49.193166] E-ID: 60   recived at ( 0, 1)
+ID: 71 [Oct 29 18:01:49.193169] E-ID: 15   recived at ( 7, 1)
+ID: 53 [Oct 29 18:01:49.193171] E-ID: 12   recived at ( 5, 3)
+ID: 69 [Oct 29 18:01:49.193172] E-ID: 10   recived at ( 6, 9)
+ID: 38 [Oct 29 18:01:49.193174] E-ID: 35   recived at ( 3, 8)
+ID: 82 [Oct 29 18:01:49.193180] E-ID: 13    send from ( 8, 2) to ( 7, 2) [N]
+ID: 72 [Oct 29 18:01:49.193185] E-ID: 13   recived at ( 7, 2)
+ID: 29 [Oct 29 18:01:49.244180] E-ID:  9    send from ( 2, 9) to ( 2, 8) [W]
+ID: 28 [Oct 29 18:01:49.244205] E-ID:  9   recived at ( 2, 8)
+ID:  1 [Oct 29 18:01:49.294486] E-ID: 60    send from ( 0, 1) to ( 1, 1) [S]
+ID: 11 [Oct 29 18:01:49.294518] E-ID: 60   recived at ( 1, 1)
+ID: 94 [Oct 29 18:01:49.294524] E-ID: 43    send from ( 9, 4) to ( 9, 3) [W]
+ID: 93 [Oct 29 18:01:49.294532] E-ID: 43   recived at ( 9, 3)
+ID: 41 [Oct 29 18:01:49.294534] E-ID: 63   spawned at ( 4, 1)
+ID: 14 [Oct 29 18:01:49.294537] E-ID: 22    send from ( 1, 4) to ( 1, 3) [W]
+ID: 13 [Oct 29 18:01:49.294538] E-ID: 22   recived at ( 1, 3)
+ID: 31 [Oct 29 18:01:49.345350] E-ID: 32    send from ( 3, 1) to ( 3, 0) [W]
+ID: 41 [Oct 29 18:01:49.345383] E-ID: 63    send from ( 4, 1) to ( 3, 1) [N]
+ID: 37 [Oct 29 18:01:49.345385] E-ID: 39    send from ( 3, 7) to ( 4, 7) [S]
+ID: 47 [Oct 29 18:01:49.345387] E-ID: 39   recived at ( 4, 7)
+ID: 30 [Oct 29 18:01:49.345390] E-ID: 32   recived at ( 3, 0)
+ID: 63 [Oct 29 18:01:49.345394] E-ID:  2    send from ( 6, 3) to ( 6, 2) [W]
+ID: 62 [Oct 29 18:01:49.345411] E-ID:  2   recived at ( 6, 2)
+ID: 31 [Oct 29 18:01:49.345443] E-ID: 63   recived at ( 3, 1)
+ID: 99 [Oct 29 18:01:49.395894] E-ID: 36    send from ( 9, 9) to ( 9, 8) [W]
+ID: 98 [Oct 29 18:01:49.395943] E-ID: 36   recived at ( 9, 8)
+ID: 87 [Oct 29 18:01:49.395971] E-ID: 64   spawned at ( 8, 7)
+ID: 89 [Oct 29 18:01:49.395983] E-ID: 37    send from ( 8, 9) to ( 9, 9) [S]
+ID: 48 [Oct 29 18:01:49.395989] E-ID: 56    send from ( 4, 8) to ( 5, 8) [S]
+ID: 95 [Oct 29 18:01:49.395995] E-ID: 26    send from ( 9, 5) to ( 8, 5) [N]
+ID: 69 [Oct 29 18:01:49.396003] E-ID: 10    send from ( 6, 9) to ( 7, 9) [S]
+ID: 99 [Oct 29 18:01:49.396007] E-ID: 37   recived at ( 9, 9)
+ID: 58 [Oct 29 18:01:49.396009] E-ID: 56   recived at ( 5, 8)
+ID: 85 [Oct 29 18:01:49.396011] E-ID: 26   recived at ( 8, 5)
+ID: 79 [Oct 29 18:01:49.396013] E-ID: 10   recived at ( 7, 9)
+ID: 11 [Oct 29 18:01:49.446566] E-ID: 60    send from ( 1, 1) to ( 1, 2) [E]
+ID: 12 [Oct 29 18:01:49.446603] E-ID: 60   recived at ( 1, 2)
+ID: 83 [Oct 29 18:01:49.446610] E-ID: 46    send from ( 8, 3) to ( 8, 4) [E]
+ID: 84 [Oct 29 18:01:49.446618] E-ID: 46   recived at ( 8, 4)
+ID: 65 [Oct 29 18:01:49.496998] E-ID: 49    send from ( 6, 5) to ( 5, 5) [N]
+ID: 55 [Oct 29 18:01:49.497037] E-ID: 49   recived at ( 5, 5)
+ID: 90 [Oct 29 18:01:49.497040] E-ID: 61    send from ( 9, 0) to ( 8, 0) [N]
+ID: 80 [Oct 29 18:01:49.497042] E-ID: 61   recived at ( 8, 0)
+ID: 13 [Oct 29 18:01:49.548110] E-ID: 22    send from ( 1, 3) to ( 1, 4) [E]
+ID: 47 [Oct 29 18:01:49.548123] E-ID: 39    send from ( 4, 7) to ( 3, 7) [N]
+ID: 14 [Oct 29 18:01:49.548132] E-ID: 22   recived at ( 1, 4)
+ID: 37 [Oct 29 18:01:49.548134] E-ID: 39   recived at ( 3, 7)
+ID: 85 [Oct 29 18:01:49.548143] E-ID: 26    send from ( 8, 5) to ( 7, 5) [N]
+ID: 75 [Oct 29 18:01:49.548150] E-ID: 26   recived at ( 7, 5)
+ID: 80 [Oct 29 18:01:49.598246] E-ID: 61    send from ( 8, 0) to ( 9, 0) [S]
+ID: 21 [Oct 29 18:01:49.598268] E-ID: 28    send from ( 2, 1) to ( 2, 0) [W]
+ID: 70 [Oct 29 18:01:49.598296] E-ID: 20    send from ( 7, 0) to ( 6, 0) [N]
+ID: 37 [Oct 29 18:01:49.598300] E-ID: 39    send from ( 3, 7) to ( 3, 6) [W]
+ID: 95 [Oct 29 18:01:49.598304] E-ID: 65   spawned at ( 9, 5)
+ID: 90 [Oct 29 18:01:49.598310] E-ID: 61   recived at ( 9, 0)
+ID: 20 [Oct 29 18:01:49.598312] E-ID: 28   recived at ( 2, 0)
+ID: 60 [Oct 29 18:01:49.598313] E-ID: 20   recived at ( 6, 0)
+ID: 36 [Oct 29 18:01:49.598315] E-ID: 39   recived at ( 3, 6)
+ID: 38 [Oct 29 18:01:49.598347] E-ID: 35    send from ( 3, 8) to ( 3, 7) [W]
+ID: 37 [Oct 29 18:01:49.598353] E-ID: 35   recived at ( 3, 7)
+ID: 71 [Oct 29 18:01:49.648929] E-ID: 15    send from ( 7, 1) to ( 7, 0) [W]
+ID: 70 [Oct 29 18:01:49.648955] E-ID: 15   recived at ( 7, 0)
+ID: 95 [Oct 29 18:01:49.648960] E-ID: 65    send from ( 9, 5) to ( 8, 5) [N]
+ID: 60 [Oct 29 18:01:49.648968] E-ID: 20    send from ( 6, 0) to ( 6, 1) [E]
+ID: 85 [Oct 29 18:01:49.648971] E-ID: 65   recived at ( 8, 5)
+ID: 93 [Oct 29 18:01:49.648972] E-ID: 43    send from ( 9, 3) to ( 8, 3) [N]
+ID: 61 [Oct 29 18:01:49.648975] E-ID: 20   recived at ( 6, 1)
+ID: 83 [Oct 29 18:01:49.648975] E-ID: 43   recived at ( 8, 3)
+ID: 75 [Oct 29 18:01:49.648978] E-ID: 26    send from ( 7, 5) to ( 6, 5) [N]
+ID: 65 [Oct 29 18:01:49.648979] E-ID: 26   recived at ( 6, 5)
+ID: 87 [Oct 29 18:01:49.699495] E-ID: 64    send from ( 8, 7) to ( 8, 8) [E]
+ID: 90 [Oct 29 18:01:49.699522] E-ID: 61    send from ( 9, 0) to ( 8, 0) [N]
+ID: 88 [Oct 29 18:01:49.699529] E-ID: 64   recived at ( 8, 8)
+ID: 80 [Oct 29 18:01:49.699531] E-ID: 61   recived at ( 8, 0)
+ID: 42 [Oct 29 18:01:49.699537] E-ID:  4    send from ( 4, 2) to ( 4, 1) [W]
+ID: 78 [Oct 29 18:01:49.699542] E-ID:  3    send from ( 7, 8) to ( 6, 8) [N]
+ID: 41 [Oct 29 18:01:49.699543] E-ID:  4   recived at ( 4, 1)
+ID: 81 [Oct 29 18:01:49.699548] E-ID:  1    send from ( 8, 1) to ( 7, 1) [N]
+ID: 71 [Oct 29 18:01:49.699549] E-ID:  1   recived at ( 7, 1)
+ID: 68 [Oct 29 18:01:49.699550] E-ID:  3   recived at ( 6, 8)
+ID: 77 [Oct 29 18:01:49.750155] E-ID: 62    send from ( 7, 7) to ( 7, 8) [E]
+ID: 57 [Oct 29 18:01:49.750242] E-ID: 57    send from ( 5, 7) to ( 6, 7) [S]
+ID: 67 [Oct 29 18:01:49.750243] E-ID: 57   recived at ( 6, 7)
+ID: 88 [Oct 29 18:01:49.750252] E-ID: 64    send from ( 8, 8) to ( 8, 7) [W]
+ID: 87 [Oct 29 18:01:49.750253] E-ID: 64   recived at ( 8, 7)
+ID:  5 [Oct 29 18:01:49.750269] E-ID: 52    send from ( 0, 5) to ( 0, 6) [E]
+ID:  6 [Oct 29 18:01:49.750270] E-ID: 52   recived at ( 0, 6)
+ID: 71 [Oct 29 18:01:49.750274] E-ID:  1    send from ( 7, 1) to ( 8, 1) [S]
+ID: 81 [Oct 29 18:01:49.750274] E-ID:  1   recived at ( 8, 1)
+ID: 78 [Oct 29 18:01:49.750275] E-ID: 62   recived at ( 7, 8)
+ID: 74 [Oct 29 18:01:49.800739] E-ID: 27    send from ( 7, 4) to ( 7, 5) [E]
+ID: 12 [Oct 29 18:01:49.800786] E-ID: 60    send from ( 1, 2) to ( 1, 1) [W]
+ID: 43 [Oct 29 18:01:49.800804] E-ID: 47    send from ( 4, 3) to ( 4, 4) [E]
+ID: 58 [Oct 29 18:01:49.800814] E-ID: 56    send from ( 5, 8) to ( 4, 8) [N]
+ID: 61 [Oct 29 18:01:49.800840] E-ID: 20    send from ( 6, 1) to ( 6, 0) [W]
+ID: 75 [Oct 29 18:01:49.800899] E-ID: 27   recived at ( 7, 5)
+ID: 11 [Oct 29 18:01:49.800905] E-ID: 60   recived at ( 1, 1)
+ID: 44 [Oct 29 18:01:49.800908] E-ID: 47   recived at ( 4, 4)
+ID: 48 [Oct 29 18:01:49.800910] E-ID: 56   recived at ( 4, 8)
+ID: 60 [Oct 29 18:01:49.800913] E-ID: 20   recived at ( 6, 0)
+ID: 76 [Oct 29 18:01:49.800915] E-ID: 18    send from ( 7, 6) to ( 7, 7) [E]
+ID: 77 [Oct 29 18:01:49.800943] E-ID: 18   recived at ( 7, 7)
+ID: 92 [Oct 29 18:01:49.851061] E-ID: 17    send from ( 9, 2) to ( 9, 3) [E]
+ID: 93 [Oct 29 18:01:49.851128] E-ID: 17   recived at ( 9, 3)
+ID: 85 [Oct 29 18:01:49.851366] E-ID: 65    send from ( 8, 5) to ( 9, 5) [S]
+ID: 83 [Oct 29 18:01:49.851374] E-ID: 43    send from ( 8, 3) to ( 8, 2) [W]
+ID: 82 [Oct 29 18:01:49.851377] E-ID: 43   recived at ( 8, 2)
+ID: 32 [Oct 29 18:01:49.851385] E-ID: 24    send from ( 3, 2) to ( 4, 2) [S]
+ID: 95 [Oct 29 18:01:49.851395] E-ID: 65   recived at ( 9, 5)
+ID: 42 [Oct 29 18:01:49.851399] E-ID: 24   recived at ( 4, 2)
+ID: 62 [Oct 29 18:01:49.901413] E-ID:  2    send from ( 6, 2) to ( 6, 3) [E]
+ID: 63 [Oct 29 18:01:49.901446] E-ID:  2   recived at ( 6, 3)
+ID: 91 [Oct 29 18:01:49.951932] E-ID: 55    send from ( 9, 1) to ( 9, 2) [E]
+ID: 80 [Oct 29 18:01:49.951978] E-ID: 61    send from ( 8, 0) to ( 9, 0) [S]
+ID: 92 [Oct 29 18:01:49.951983] E-ID: 55   recived at ( 9, 2)
+ID: 90 [Oct 29 18:01:49.951985] E-ID: 61   recived at ( 9, 0)
+ID: 37 [Oct 29 18:01:49.951993] E-ID: 35    send from ( 3, 7) to ( 3, 8) [E]
+ID: 38 [Oct 29 18:01:49.952001] E-ID: 35   recived at ( 3, 8)
+ID: 48 [Oct 29 18:01:50.002309] E-ID: 56    send from ( 4, 8) to ( 5, 8) [S]
+ID: 79 [Oct 29 18:01:50.002330] E-ID: 10    send from ( 7, 9) to ( 8, 9) [S]
+ID: 58 [Oct 29 18:01:50.002336] E-ID: 56   recived at ( 5, 8)
+ID: 89 [Oct 29 18:01:50.002339] E-ID: 10   recived at ( 8, 9)
+ID: 87 [Oct 29 18:01:50.052684] E-ID: 64    send from ( 8, 7) to ( 8, 8) [E]
+ID:  2 [Oct 29 18:01:50.052721] E-ID: 45    send from ( 0, 2) to ( 0, 1) [W]
+ID: 91 [Oct 29 18:01:50.052726] E-ID: 66   spawned at ( 9, 1)
+ID: 64 [Oct 29 18:01:50.052735] E-ID: 14    send from ( 6, 4) to ( 5, 4) [N]
+ID: 19 [Oct 29 18:01:50.052759] E-ID: 42    send from ( 1, 9) to ( 2, 9) [S]
+ID: 88 [Oct 29 18:01:50.052770] E-ID: 64   recived at ( 8, 8)
+ID:  1 [Oct 29 18:01:50.052773] E-ID: 45   recived at ( 0, 1)
+ID: 54 [Oct 29 18:01:50.052774] E-ID: 14   recived at ( 5, 4)
+ID: 29 [Oct 29 18:01:50.052776] E-ID: 42   recived at ( 2, 9)
+ID: 22 [Oct 29 18:01:50.103116] E-ID:  6    send from ( 2, 2) to ( 3, 2) [S]
+ID: 42 [Oct 29 18:01:50.103165] E-ID: 24    send from ( 4, 2) to ( 4, 3) [E]
+ID: 75 [Oct 29 18:01:50.103179] E-ID: 27    send from ( 7, 5) to ( 8, 5) [S]
+ID: 36 [Oct 29 18:01:50.103188] E-ID: 39    send from ( 3, 6) to ( 3, 7) [E]
+ID: 66 [Oct 29 18:01:50.103191] E-ID: 59    send from ( 6, 6) to ( 7, 6) [S]
+ID:  4 [Oct 29 18:01:50.103192] E-ID: 67   spawned at ( 0, 4)
+ID: 85 [Oct 29 18:01:50.103197] E-ID: 27   recived at ( 8, 5)
+ID: 32 [Oct 29 18:01:50.103199] E-ID:  6   recived at ( 3, 2)
+ID: 37 [Oct 29 18:01:50.103200] E-ID: 39   recived at ( 3, 7)
+ID: 43 [Oct 29 18:01:50.103201] E-ID: 24   recived at ( 4, 3)
+ID: 76 [Oct 29 18:01:50.103202] E-ID: 59   recived at ( 7, 6)
+ID: 13 [Oct 29 18:01:50.153994] E-ID: 68   spawned at ( 1, 3)
+ID: 17 [Oct 29 18:01:50.154006] E-ID: 53    send from ( 1, 7) to ( 0, 7) [N]
+ID:  7 [Oct 29 18:01:50.154019] E-ID: 53   recived at ( 0, 7)
+ID: 72 [Oct 29 18:01:50.154022] E-ID: 13    send from ( 7, 2) to ( 7, 1) [W]
+ID: 71 [Oct 29 18:01:50.154031] E-ID: 13   recived at ( 7, 1)
+ID: 57 [Oct 29 18:01:50.154047] E-ID: 69   spawned at ( 5, 7)
+ID:  6 [Oct 29 18:01:50.154052] E-ID: 52    send from ( 0, 6) to ( 1, 6) [S]
+ID: 16 [Oct 29 18:01:50.154058] E-ID: 52   recived at ( 1, 6)
+ID: 76 [Oct 29 18:01:50.204475] E-ID: 59    send from ( 7, 6) to ( 6, 6) [N]
+ID: 43 [Oct 29 18:01:50.204501] E-ID: 24    send from ( 4, 3) to ( 4, 2) [W]
+ID: 66 [Oct 29 18:01:50.204505] E-ID: 59   recived at ( 6, 6)
+ID: 42 [Oct 29 18:01:50.204507] E-ID: 24   recived at ( 4, 2)
+ID: 23 [Oct 29 18:01:50.204607] E-ID: 41    send from ( 2, 3) to ( 2, 2) [W]
+ID: 90 [Oct 29 18:01:50.204638] E-ID: 61    send from ( 9, 0) to ( 8, 0) [N]
+ID:  9 [Oct 29 18:01:50.204648] E-ID: 38    send from ( 0, 9) to ( 0, 8) [W]
+ID: 22 [Oct 29 18:01:50.204655] E-ID: 41   recived at ( 2, 2)
+ID: 80 [Oct 29 18:01:50.204657] E-ID: 61   recived at ( 8, 0)
+ID:  8 [Oct 29 18:01:50.204659] E-ID: 38   recived at ( 0, 8)
+ID:  7 [Oct 29 18:01:50.204669] E-ID: 53    send from ( 0, 7) to ( 0, 6) [W]
+ID:  6 [Oct 29 18:01:50.204672] E-ID: 53   recived at ( 0, 6)
+ID: 86 [Oct 29 18:01:50.254884] E-ID: 31    send from ( 8, 6) to ( 7, 6) [N]
+ID: 33 [Oct 29 18:01:50.254914] E-ID: 21    send from ( 3, 3) to ( 4, 3) [S]
+ID: 13 [Oct 29 18:01:50.254930] E-ID: 68    send from ( 1, 3) to ( 2, 3) [S]
+ID: 22 [Oct 29 18:01:50.254945] E-ID: 41    send from ( 2, 2) to ( 1, 2) [N]
+ID: 76 [Oct 29 18:01:50.254957] E-ID: 31   recived at ( 7, 6)
+ID: 43 [Oct 29 18:01:50.254959] E-ID: 21   recived at ( 4, 3)
+ID: 23 [Oct 29 18:01:50.254961] E-ID: 68   recived at ( 2, 3)
+ID: 12 [Oct 29 18:01:50.254963] E-ID: 41   recived at ( 1, 2)
+ID: 86 [Oct 29 18:01:50.305440] E-ID: 70   spawned at ( 8, 6)
+ID: 63 [Oct 29 18:01:50.305487] E-ID:  2    send from ( 6, 3) to ( 6, 2) [W]
+ID: 46 [Oct 29 18:01:50.305521] E-ID: 33    send from ( 4, 6) to ( 3, 6) [N]
+ID: 62 [Oct 29 18:01:50.305522] E-ID:  2   recived at ( 6, 2)
+ID: 36 [Oct 29 18:01:50.305526] E-ID: 33   recived at ( 3, 6)
+ID: 36 [Oct 29 18:01:50.356267] E-ID: 33    send from ( 3, 6) to ( 4, 6) [S]
+ID: 46 [Oct 29 18:01:50.356330] E-ID: 33   recived at ( 4, 6)
+ID: 27 [Oct 29 18:01:50.356343] E-ID: 19    send from ( 2, 7) to ( 1, 7) [N]
+ID: 17 [Oct 29 18:01:50.356348] E-ID: 19   recived at ( 1, 7)
+ID: 59 [Oct 29 18:01:50.356350] E-ID: 30    send from ( 5, 9) to ( 6, 9) [S]
+ID: 69 [Oct 29 18:01:50.356357] E-ID: 30   recived at ( 6, 9)
+ID: 88 [Oct 29 18:01:50.406828] E-ID: 64    send from ( 8, 8) to ( 8, 7) [W]
+ID: 17 [Oct 29 18:01:50.406853] E-ID: 19    send from ( 1, 7) to ( 2, 7) [S]
+ID: 87 [Oct 29 18:01:50.406859] E-ID: 64   recived at ( 8, 7)
+ID: 27 [Oct 29 18:01:50.406861] E-ID: 19   recived at ( 2, 7)
+ID: 23 [Oct 29 18:01:50.406865] E-ID: 68    send from ( 2, 3) to ( 2, 2) [W]
+ID: 22 [Oct 29 18:01:50.406873] E-ID: 68   recived at ( 2, 2)
+ID: 89 [Oct 29 18:01:50.406892] E-ID: 10    send from ( 8, 9) to ( 8, 8) [W]
+ID: 88 [Oct 29 18:01:50.406902] E-ID: 10   recived at ( 8, 8)
+ID: 57 [Oct 29 18:01:50.457729] E-ID: 69    send from ( 5, 7) to ( 4, 7) [N]
+ID: 47 [Oct 29 18:01:50.457743] E-ID: 69   recived at ( 4, 7)
+ID: 94 [Oct 29 18:01:50.558464] E-ID: 71   spawned at ( 9, 4)
+ID:  3 [Oct 29 18:01:50.558489] E-ID: 34    send from ( 0, 3) to ( 0, 2) [W]
+ID:  2 [Oct 29 18:01:50.558530] E-ID: 34   recived at ( 0, 2)
+ID: 56 [Oct 29 18:01:50.558542] E-ID: 23    send from ( 5, 6) to ( 5, 7) [E]
+ID: 58 [Oct 29 18:01:50.558545] E-ID: 56    send from ( 5, 8) to ( 4, 8) [N]
+ID: 48 [Oct 29 18:01:50.558546] E-ID: 56   recived at ( 4, 8)
+ID: 57 [Oct 29 18:01:50.558554] E-ID: 23   recived at ( 5, 7)
+ID: 57 [Oct 29 18:01:50.608976] E-ID: 23    send from ( 5, 7) to ( 5, 6) [W]
+ID: 82 [Oct 29 18:01:50.609090] E-ID: 43    send from ( 8, 2) to ( 8, 3) [E]
+ID: 83 [Oct 29 18:01:50.609091] E-ID: 43   recived at ( 8, 3)
+ID: 65 [Oct 29 18:01:50.609129] E-ID: 26    send from ( 6, 5) to ( 7, 5) [S]
+ID: 75 [Oct 29 18:01:50.609130] E-ID: 26   recived at ( 7, 5)
+ID: 49 [Oct 29 18:01:50.609134] E-ID: 11    send from ( 4, 9) to ( 3, 9) [N]
+ID: 39 [Oct 29 18:01:50.609135] E-ID: 11   recived at ( 3, 9)
+ID: 56 [Oct 29 18:01:50.609144] E-ID: 23   recived at ( 5, 6)
+ID: 35 [Oct 29 18:01:50.659769] E-ID: 54    send from ( 3, 5) to ( 3, 6) [E]
+ID: 36 [Oct 29 18:01:50.659815] E-ID: 54   recived at ( 3, 6)
+ID: 92 [Oct 29 18:01:50.659824] E-ID: 55    send from ( 9, 2) to ( 8, 2) [N]
+ID: 82 [Oct 29 18:01:50.659831] E-ID: 55   recived at ( 8, 2)
+ID: 78 [Oct 29 18:01:50.709969] E-ID: 62    send from ( 7, 8) to ( 7, 9) [E]
+ID: 45 [Oct 29 18:01:50.709990] E-ID: 72   spawned at ( 4, 5)
+ID: 11 [Oct 29 18:01:50.710032] E-ID: 60    send from ( 1, 1) to ( 1, 0) [W]
+ID: 24 [Oct 29 18:01:50.710040] E-ID:  8    send from ( 2, 4) to ( 2, 3) [W]
+ID: 79 [Oct 29 18:01:50.710045] E-ID: 62   recived at ( 7, 9)
+ID: 10 [Oct 29 18:01:50.710046] E-ID: 60   recived at ( 1, 0)
+ID: 23 [Oct 29 18:01:50.710051] E-ID:  8   recived at ( 2, 3)
+ID: 77 [Oct 29 18:01:50.760872] E-ID: 18    send from ( 7, 7) to ( 7, 8) [E]
+ID: 73 [Oct 29 18:01:50.760894] E-ID: 16    send from ( 7, 3) to ( 6, 3) [N]
+ID: 48 [Oct 29 18:01:50.760901] E-ID: 56    send from ( 4, 8) to ( 5, 8) [S]
+ID: 78 [Oct 29 18:01:50.760921] E-ID: 18   recived at ( 7, 8)
+ID: 63 [Oct 29 18:01:50.760923] E-ID: 16   recived at ( 6, 3)
+ID: 58 [Oct 29 18:01:50.760925] E-ID: 56   recived at ( 5, 8)
+ID: 87 [Oct 29 18:01:50.811602] E-ID: 64    send from ( 8, 7) to ( 7, 7) [N]
+ID: 29 [Oct 29 18:01:50.811641] E-ID: 42    send from ( 2, 9) to ( 1, 9) [N]
+ID: 25 [Oct 29 18:01:50.811676] E-ID: 48    send from ( 2, 5) to ( 3, 5) [S]
+ID: 14 [Oct 29 18:01:50.811680] E-ID: 22    send from ( 1, 4) to ( 1, 5) [E]
+ID: 15 [Oct 29 18:01:50.811684] E-ID: 22   recived at ( 1, 5)
+ID: 20 [Oct 29 18:01:50.811707] E-ID: 28    send from ( 2, 0) to ( 2, 1) [E]
+ID: 19 [Oct 29 18:01:50.811713] E-ID: 42   recived at ( 1, 9)
+ID: 77 [Oct 29 18:01:50.811715] E-ID: 64   recived at ( 7, 7)
+ID: 35 [Oct 29 18:01:50.811718] E-ID: 48   recived at ( 3, 5)
+ID: 21 [Oct 29 18:01:50.811721] E-ID: 28   recived at ( 2, 1)
+ID: 35 [Oct 29 18:01:50.862040] E-ID: 48    send from ( 3, 5) to ( 2, 5) [N]
+ID: 25 [Oct 29 18:01:50.862052] E-ID: 48   recived at ( 2, 5)
+ID: 24 [Oct 29 18:01:50.862181] E-ID: 73   spawned at ( 2, 4)
+ID: 34 [Oct 29 18:01:50.862220] E-ID: 29    send from ( 3, 4) to ( 3, 5) [E]
+ID: 35 [Oct 29 18:01:50.862222] E-ID: 29   recived at ( 3, 5)
+ID: 30 [Oct 29 18:01:50.912470] E-ID: 32    send from ( 3, 0) to ( 2, 0) [N]
+ID: 20 [Oct 29 18:01:50.912482] E-ID: 32   recived at ( 2, 0)
+ID: 23 [Oct 29 18:01:50.962970] E-ID:  8    send from ( 2, 3) to ( 1, 3) [N]
+ID:  1 [Oct 29 18:01:50.962990] E-ID: 45    send from ( 0, 1) to ( 1, 1) [S]
+ID: 13 [Oct 29 18:01:50.963000] E-ID:  8   recived at ( 1, 3)
+ID: 11 [Oct 29 18:01:50.963002] E-ID: 45   recived at ( 1, 1)
+ID: 15 [Oct 29 18:01:50.963014] E-ID: 22    send from ( 1, 5) to ( 0, 5) [N]
+ID:  5 [Oct 29 18:01:50.963015] E-ID: 22   recived at ( 0, 5)
+ID: 91 [Oct 29 18:01:50.963024] E-ID: 66    send from ( 9, 1) to ( 9, 0) [W]
+ID: 90 [Oct 29 18:01:50.963027] E-ID: 66   recived at ( 9, 0)
+ID: 39 [Oct 29 18:01:51.064280] E-ID: 11    send from ( 3, 9) to ( 4, 9) [S]
+ID: 49 [Oct 29 18:01:51.064325] E-ID: 11   recived at ( 4, 9)
+ID:  8 [Oct 29 18:01:51.064331] E-ID: 38    send from ( 0, 8) to ( 0, 9) [E]
+ID: 40 [Oct 29 18:01:51.064334] E-ID: 40    send from ( 4, 0) to ( 3, 0) [N]
+ID: 43 [Oct 29 18:01:51.064340] E-ID: 21    send from ( 4, 3) to ( 3, 3) [N]
+ID:  9 [Oct 29 18:01:51.064344] E-ID: 38   recived at ( 0, 9)
+ID: 30 [Oct 29 18:01:51.064346] E-ID: 40   recived at ( 3, 0)
+ID: 33 [Oct 29 18:01:51.064347] E-ID: 21   recived at ( 3, 3)
+ID: 79 [Oct 29 18:01:51.114645] E-ID: 62    send from ( 7, 9) to ( 8, 9) [S]
+ID: 44 [Oct 29 18:01:51.114696] E-ID: 47    send from ( 4, 4) to ( 4, 3) [W]
+ID: 10 [Oct 29 18:01:51.114717] E-ID: 60    send from ( 1, 0) to ( 0, 0) [N]
+ID:  0 [Oct 29 18:01:51.114719] E-ID: 60   recived at ( 0, 0)
+ID: 19 [Oct 29 18:01:51.114726] E-ID: 42    send from ( 1, 9) to ( 2, 9) [S]
+ID: 29 [Oct 29 18:01:51.114728] E-ID: 42   recived at ( 2, 9)
+ID: 89 [Oct 29 18:01:51.114732] E-ID: 62   recived at ( 8, 9)
+ID: 43 [Oct 29 18:01:51.114733] E-ID: 47   recived at ( 4, 3)
+ID: 83 [Oct 29 18:01:51.114749] E-ID: 43    send from ( 8, 3) to ( 7, 3) [N]
+ID: 73 [Oct 29 18:01:51.114750] E-ID: 43   recived at ( 7, 3)
+ID: 43 [Oct 29 18:01:51.165288] E-ID: 47    send from ( 4, 3) to ( 4, 4) [E]
+ID: 44 [Oct 29 18:01:51.165318] E-ID: 47   recived at ( 4, 4)
+ID: 22 [Oct 29 18:01:51.165371] E-ID: 68    send from ( 2, 2) to ( 2, 3) [E]
+ID: 69 [Oct 29 18:01:51.165391] E-ID: 30    send from ( 6, 9) to ( 5, 9) [N]
+ID: 23 [Oct 29 18:01:51.165406] E-ID: 68   recived at ( 2, 3)
+ID: 59 [Oct 29 18:01:51.165408] E-ID: 30   recived at ( 5, 9)
+ID: 86 [Oct 29 18:01:51.215768] E-ID: 70    send from ( 8, 6) to ( 8, 7) [E]
+ID: 82 [Oct 29 18:01:51.215797] E-ID: 55    send from ( 8, 2) to ( 7, 2) [N]
+ID: 24 [Oct 29 18:01:51.215810] E-ID: 73    send from ( 2, 4) to ( 3, 4) [S]
+ID: 78 [Oct 29 18:01:51.215816] E-ID: 18    send from ( 7, 8) to ( 7, 9) [E]
+ID: 87 [Oct 29 18:01:51.215831] E-ID: 70   recived at ( 8, 7)
+ID: 72 [Oct 29 18:01:51.215834] E-ID: 55   recived at ( 7, 2)
+ID: 34 [Oct 29 18:01:51.215837] E-ID: 73   recived at ( 3, 4)
+ID: 79 [Oct 29 18:01:51.215839] E-ID: 18   recived at ( 7, 9)
+ID: 54 [Oct 29 18:01:51.215849] E-ID: 14    send from ( 5, 4) to ( 6, 4) [S]
+ID: 64 [Oct 29 18:01:51.215863] E-ID: 14   recived at ( 6, 4)
+ID: 82 [Oct 29 18:01:51.266316] E-ID: 74   spawned at ( 8, 2)
+ID: 42 [Oct 29 18:01:51.266354] E-ID: 24    send from ( 4, 2) to ( 4, 3) [E]
+ID: 43 [Oct 29 18:01:51.266360] E-ID: 24   recived at ( 4, 3)
+ID: 87 [Oct 29 18:01:51.266368] E-ID: 70    send from ( 8, 7) to ( 8, 6) [W]
+ID: 90 [Oct 29 18:01:51.266371] E-ID: 66    send from ( 9, 0) to ( 9, 1) [E]
+ID: 86 [Oct 29 18:01:51.266372] E-ID: 70   recived at ( 8, 6)
+ID: 91 [Oct 29 18:01:51.266378] E-ID: 66   recived at ( 9, 1)
+ID: 82 [Oct 29 18:01:51.316984] E-ID: 74    send from ( 8, 2) to ( 9, 2) [S]
+ID:  6 [Oct 29 18:01:51.317005] E-ID: 53    send from ( 0, 6) to ( 0, 7) [E]
+ID: 84 [Oct 29 18:01:51.317012] E-ID: 46    send from ( 8, 4) to ( 8, 3) [W]
+ID: 92 [Oct 29 18:01:51.317031] E-ID: 74   recived at ( 9, 2)
+ID:  7 [Oct 29 18:01:51.317033] E-ID: 53   recived at ( 0, 7)
+ID: 83 [Oct 29 18:01:51.317035] E-ID: 46   recived at ( 8, 3)
+ID:  5 [Oct 29 18:01:51.317048] E-ID: 22    send from ( 0, 5) to ( 0, 6) [E]
+ID:  6 [Oct 29 18:01:51.317051] E-ID: 22   recived at ( 0, 6)
+ID: 80 [Oct 29 18:01:51.367111] E-ID: 61    send from ( 8, 0) to ( 9, 0) [S]
+ID: 23 [Oct 29 18:01:51.367126] E-ID: 68    send from ( 2, 3) to ( 2, 2) [W]
+ID: 44 [Oct 29 18:01:51.367129] E-ID: 47    send from ( 4, 4) to ( 5, 4) [S]
+ID: 54 [Oct 29 18:01:51.367130] E-ID: 47   recived at ( 5, 4)
+ID: 47 [Oct 29 18:01:51.367153] E-ID: 69    send from ( 4, 7) to ( 4, 8) [E]
+ID: 22 [Oct 29 18:01:51.367154] E-ID: 68   recived at ( 2, 2)
+ID: 90 [Oct 29 18:01:51.367159] E-ID: 61   recived at ( 9, 0)
+ID: 48 [Oct 29 18:01:51.367160] E-ID: 69   recived at ( 4, 8)
+ID: 72 [Oct 29 18:01:51.417546] E-ID: 55    send from ( 7, 2) to ( 8, 2) [S]
+ID: 60 [Oct 29 18:01:51.417574] E-ID: 20    send from ( 6, 0) to ( 6, 1) [E]
+ID: 82 [Oct 29 18:01:51.417586] E-ID: 55   recived at ( 8, 2)
+ID: 61 [Oct 29 18:01:51.417588] E-ID: 20   recived at ( 6, 1)
+ID: 25 [Oct 29 18:01:51.417640] E-ID: 48    send from ( 2, 5) to ( 1, 5) [N]
+ID: 15 [Oct 29 18:01:51.417659] E-ID: 48   recived at ( 1, 5)
+ID: 84 [Oct 29 18:01:51.417662] E-ID: 75   spawned at ( 8, 4)
+ID: 25 [Oct 29 18:01:51.467955] E-ID: 76   spawned at ( 2, 5)
+ID: 84 [Oct 29 18:01:51.467976] E-ID: 75    send from ( 8, 4) to ( 7, 4) [N]
+ID: 90 [Oct 29 18:01:51.467988] E-ID: 61    send from ( 9, 0) to ( 8, 0) [N]
+ID: 74 [Oct 29 18:01:51.467998] E-ID: 75   recived at ( 7, 4)
+ID: 80 [Oct 29 18:01:51.468000] E-ID: 61   recived at ( 8, 0)
+ID: 30 [Oct 29 18:01:51.468005] E-ID: 40    send from ( 3, 0) to ( 4, 0) [S]
+ID: 16 [Oct 29 18:01:51.468029] E-ID: 52    send from ( 1, 6) to ( 1, 7) [E]
+ID: 17 [Oct 29 18:01:51.468030] E-ID: 52   recived at ( 1, 7)
+ID: 34 [Oct 29 18:01:51.468040] E-ID: 73    send from ( 3, 4) to ( 4, 4) [S]
+ID: 44 [Oct 29 18:01:51.468041] E-ID: 73   recived at ( 4, 4)
+ID: 41 [Oct 29 18:01:51.468398] E-ID:  4    send from ( 4, 1) to ( 4, 2) [E]
+ID: 40 [Oct 29 18:01:51.468426] E-ID: 40   recived at ( 4, 0)
+ID: 42 [Oct 29 18:01:51.468431] E-ID:  4   recived at ( 4, 2)
+ID: 75 [Oct 29 18:01:51.518449] E-ID: 26    send from ( 7, 5) to ( 6, 5) [N]
+ID: 65 [Oct 29 18:01:51.518466] E-ID: 26   recived at ( 6, 5)
+ID: 79 [Oct 29 18:01:51.518786] E-ID: 18    send from ( 7, 9) to ( 6, 9) [N]
+ID: 80 [Oct 29 18:01:51.518793] E-ID: 61    send from ( 8, 0) to ( 9, 0) [S]
+ID: 90 [Oct 29 18:01:51.518794] E-ID: 61   recived at ( 9, 0)
+ID: 31 [Oct 29 18:01:51.518796] E-ID: 63    send from ( 3, 1) to ( 4, 1) [S]
+ID: 41 [Oct 29 18:01:51.518796] E-ID: 63   recived at ( 4, 1)
+ID: 21 [Oct 29 18:01:51.518807] E-ID: 28    send from ( 2, 1) to ( 3, 1) [S]
+ID: 69 [Oct 29 18:01:51.518810] E-ID: 18   recived at ( 6, 9)
+ID: 31 [Oct 29 18:01:51.518811] E-ID: 28   recived at ( 3, 1)
+ID: 49 [Oct 29 18:01:51.569263] E-ID: 11    send from ( 4, 9) to ( 3, 9) [N]
+ID: 94 [Oct 29 18:01:51.569312] E-ID: 71    send from ( 9, 4) to ( 8, 4) [N]
+ID: 39 [Oct 29 18:01:51.569319] E-ID: 11   recived at ( 3, 9)
+ID: 84 [Oct 29 18:01:51.569321] E-ID: 71   recived at ( 8, 4)
+ID: 85 [Oct 29 18:01:51.569328] E-ID: 27    send from ( 8, 5) to ( 7, 5) [N]
+ID: 75 [Oct 29 18:01:51.569332] E-ID: 27   recived at ( 7, 5)
+ID: 84 [Oct 29 18:01:51.620148] E-ID: 71    send from ( 8, 4) to ( 9, 4) [S]
+ID: 18 [Oct 29 18:01:51.620180] E-ID: 44    send from ( 1, 8) to ( 0, 8) [N]
+ID: 26 [Oct 29 18:01:51.620184] E-ID: 25    send from ( 2, 6) to ( 1, 6) [N]
+ID: 27 [Oct 29 18:01:51.620187] E-ID: 19    send from ( 2, 7) to ( 2, 6) [W]
+ID: 94 [Oct 29 18:01:51.620187] E-ID: 71   recived at ( 9, 4)
+ID:  8 [Oct 29 18:01:51.620188] E-ID: 44   recived at ( 0, 8)
+ID: 16 [Oct 29 18:01:51.620189] E-ID: 25   recived at ( 1, 6)
+ID: 33 [Oct 29 18:01:51.620195] E-ID: 21    send from ( 3, 3) to ( 3, 4) [E]
+ID: 34 [Oct 29 18:01:51.620195] E-ID: 21   recived at ( 3, 4)
+ID: 26 [Oct 29 18:01:51.620198] E-ID: 19   recived at ( 2, 6)
+ID: 39 [Oct 29 18:01:51.722003] E-ID: 11    send from ( 3, 9) to ( 4, 9) [S]
+ID: 62 [Oct 29 18:01:51.722017] E-ID:  2    send from ( 6, 2) to ( 7, 2) [S]
+ID: 49 [Oct 29 18:01:51.722027] E-ID: 11   recived at ( 4, 9)
+ID: 72 [Oct 29 18:01:51.722030] E-ID:  2   recived at ( 7, 2)
+ID: 77 [Oct 29 18:01:51.722222] E-ID: 64    send from ( 7, 7) to ( 7, 8) [E]
+ID: 32 [Oct 29 18:01:51.722235] E-ID:  6    send from ( 3, 2) to ( 3, 3) [E]
+ID: 78 [Oct 29 18:01:51.722239] E-ID: 64   recived at ( 7, 8)
+ID: 33 [Oct 29 18:01:51.722242] E-ID:  6   recived at ( 3, 3)
+ID: 56 [Oct 29 18:01:51.722251] E-ID: 23    send from ( 5, 6) to ( 5, 7) [E]
+ID: 57 [Oct 29 18:01:51.722252] E-ID: 23   recived at ( 5, 7)
+ID: 75 [Oct 29 18:01:51.772465] E-ID: 27    send from ( 7, 5) to ( 8, 5) [S]
+ID: 69 [Oct 29 18:01:51.772477] E-ID: 18    send from ( 6, 9) to ( 7, 9) [S]
+ID: 59 [Oct 29 18:01:51.772481] E-ID: 30    send from ( 5, 9) to ( 6, 9) [S]
+ID: 85 [Oct 29 18:01:51.772491] E-ID: 27   recived at ( 8, 5)
+ID: 79 [Oct 29 18:01:51.772493] E-ID: 18   recived at ( 7, 9)
+ID: 69 [Oct 29 18:01:51.772495] E-ID: 30   recived at ( 6, 9)
+ID: 83 [Oct 29 18:01:51.772597] E-ID: 46    send from ( 8, 3) to ( 8, 4) [E]
+ID: 17 [Oct 29 18:01:51.772608] E-ID: 52    send from ( 1, 7) to ( 2, 7) [S]
+ID: 25 [Oct 29 18:01:51.772618] E-ID: 76    send from ( 2, 5) to ( 2, 4) [W]
+ID: 20 [Oct 29 18:01:51.772624] E-ID: 32    send from ( 2, 0) to ( 1, 0) [N]
+ID:  4 [Oct 29 18:01:51.772628] E-ID: 67    send from ( 0, 4) to ( 0, 5) [E]
+ID: 38 [Oct 29 18:01:51.772632] E-ID: 35    send from ( 3, 8) to ( 3, 9) [E]
+ID: 84 [Oct 29 18:01:51.772640] E-ID: 46   recived at ( 8, 4)
+ID: 27 [Oct 29 18:01:51.772643] E-ID: 52   recived at ( 2, 7)
+ID: 24 [Oct 29 18:01:51.772644] E-ID: 76   recived at ( 2, 4)
+ID: 28 [Oct 29 18:01:51.772648] E-ID:  9    send from ( 2, 8) to ( 3, 8) [S]
+ID: 38 [Oct 29 18:01:51.772649] E-ID:  9   recived at ( 3, 8)
+ID:  5 [Oct 29 18:01:51.772667] E-ID: 67   recived at ( 0, 5)
+ID: 10 [Oct 29 18:01:51.772668] E-ID: 32   recived at ( 1, 0)
+ID: 39 [Oct 29 18:01:51.772669] E-ID: 35   recived at ( 3, 9)
+ID: 57 [Oct 29 18:01:51.822884] E-ID: 23    send from ( 5, 7) to ( 5, 6) [W]
+ID: 42 [Oct 29 18:01:51.822900] E-ID:  4    send from ( 4, 2) to ( 3, 2) [N]
+ID: 13 [Oct 29 18:01:51.822916] E-ID:  8    send from ( 1, 3) to ( 0, 3) [N]
+ID: 93 [Oct 29 18:01:51.822922] E-ID: 17    send from ( 9, 3) to ( 8, 3) [N]
+ID: 29 [Oct 29 18:01:51.822927] E-ID: 42    send from ( 2, 9) to ( 2, 8) [W]
+ID: 56 [Oct 29 18:01:51.822936] E-ID: 23   recived at ( 5, 6)
+ID: 32 [Oct 29 18:01:51.822939] E-ID:  4   recived at ( 3, 2)
+ID:  3 [Oct 29 18:01:51.822941] E-ID:  8   recived at ( 0, 3)
+ID: 83 [Oct 29 18:01:51.822942] E-ID: 17   recived at ( 8, 3)
+ID: 28 [Oct 29 18:01:51.822944] E-ID: 42   recived at ( 2, 8)
+ID: 76 [Oct 29 18:01:51.822993] E-ID: 31    send from ( 7, 6) to ( 7, 5) [W]
+ID: 90 [Oct 29 18:01:51.823016] E-ID: 61    send from ( 9, 0) to ( 8, 0) [N]
+ID: 97 [Oct 29 18:01:51.823022] E-ID: 50    send from ( 9, 7) to ( 8, 7) [N]
+ID: 75 [Oct 29 18:01:51.823030] E-ID: 31   recived at ( 7, 5)
+ID: 80 [Oct 29 18:01:51.823032] E-ID: 61   recived at ( 8, 0)
+ID: 87 [Oct 29 18:01:51.823034] E-ID: 50   recived at ( 8, 7)
+ID: 91 [Oct 29 18:01:51.823038] E-ID: 66    send from ( 9, 1) to ( 9, 0) [W]
+ID: 90 [Oct 29 18:01:51.823044] E-ID: 66   recived at ( 9, 0)
+ID: 52 [Oct 29 18:01:51.823050] E-ID:  7    send from ( 5, 2) to ( 6, 2) [S]
+ID: 62 [Oct 29 18:01:51.823052] E-ID:  7   recived at ( 6, 2)
+ID: 24 [Oct 29 18:01:51.873332] E-ID: 76    send from ( 2, 4) to ( 2, 3) [W]
+ID: 58 [Oct 29 18:01:51.873356] E-ID: 56    send from ( 5, 8) to ( 5, 7) [W]
+ID: 61 [Oct 29 18:01:51.873377] E-ID: 20    send from ( 6, 1) to ( 6, 0) [W]
+ID: 23 [Oct 29 18:01:51.873385] E-ID: 76   recived at ( 2, 3)
+ID: 57 [Oct 29 18:01:51.873388] E-ID: 56   recived at ( 5, 7)
+ID: 60 [Oct 29 18:01:51.873390] E-ID: 20   recived at ( 6, 0)
+ID: 83 [Oct 29 18:01:51.873447] E-ID: 17    send from ( 8, 3) to ( 9, 3) [S]
+ID: 93 [Oct 29 18:01:51.873453] E-ID: 17   recived at ( 9, 3)
+ID: 27 [Oct 29 18:01:51.924037] E-ID: 52    send from ( 2, 7) to ( 1, 7) [N]
+ID: 19 [Oct 29 18:01:51.924052] E-ID: 77   spawned at ( 1, 9)
+ID: 17 [Oct 29 18:01:51.924066] E-ID: 52   recived at ( 1, 7)
+ID: 96 [Oct 29 18:01:51.924074] E-ID: 58    send from ( 9, 6) to ( 9, 7) [E]
+ID: 97 [Oct 29 18:01:51.924079] E-ID: 58   recived at ( 9, 7)
+ID: 84 [Oct 29 18:01:51.974924] E-ID: 46    send from ( 8, 4) to ( 8, 3) [W]
+ID: 32 [Oct 29 18:01:51.974942] E-ID:  4    send from ( 3, 2) to ( 4, 2) [S]
+ID: 83 [Oct 29 18:01:51.974943] E-ID: 46   recived at ( 8, 3)
+ID: 42 [Oct 29 18:01:51.974944] E-ID:  4   recived at ( 4, 2)
+ID: 26 [Oct 29 18:01:52.025149] E-ID: 19    send from ( 2, 6) to ( 2, 5) [W]
+ID: 68 [Oct 29 18:01:52.025191] E-ID:  3    send from ( 6, 8) to ( 5, 8) [N]
+ID: 94 [Oct 29 18:01:52.025298] E-ID: 71    send from ( 9, 4) to ( 8, 4) [N]
+ID: 25 [Oct 29 18:01:52.025302] E-ID: 19   recived at ( 2, 5)
+ID:  8 [Oct 29 18:01:52.025302] E-ID: 44    send from ( 0, 8) to ( 1, 8) [S]
+ID: 18 [Oct 29 18:01:52.025304] E-ID: 44   recived at ( 1, 8)
+ID: 84 [Oct 29 18:01:52.025307] E-ID: 71   recived at ( 8, 4)
+ID: 58 [Oct 29 18:01:52.025327] E-ID:  3   recived at ( 5, 8)
+ID: 40 [Oct 29 18:01:52.075660] E-ID: 40    send from ( 4, 0) to ( 3, 0) [N]
+ID: 30 [Oct 29 18:01:52.075679] E-ID: 40   recived at ( 3, 0)
+ID:  7 [Oct 29 18:01:52.075730] E-ID: 53    send from ( 0, 7) to ( 0, 8) [E]
+ID: 52 [Oct 29 18:01:52.075748] E-ID: 78   spawned at ( 5, 2)
+ID: 36 [Oct 29 18:01:52.075753] E-ID: 54    send from ( 3, 6) to ( 2, 6) [N]
+ID:  8 [Oct 29 18:01:52.075762] E-ID: 53   recived at ( 0, 8)
+ID: 26 [Oct 29 18:01:52.075765] E-ID: 54   recived at ( 2, 6)
+ID: 11 [Oct 29 18:01:52.075767] E-ID: 45    send from ( 1, 1) to ( 0, 1) [N]
+ID: 57 [Oct 29 18:01:52.075770] E-ID: 56    send from ( 5, 7) to ( 4, 7) [N]
+ID: 60 [Oct 29 18:01:52.075773] E-ID: 20    send from ( 6, 0) to ( 6, 1) [E]
+ID: 95 [Oct 29 18:01:52.075778] E-ID: 65    send from ( 9, 5) to ( 9, 4) [W]
+ID: 94 [Oct 29 18:01:52.075779] E-ID: 65   recived at ( 9, 4)
+ID: 47 [Oct 29 18:01:52.075788] E-ID: 56   recived at ( 4, 7)
+ID:  1 [Oct 29 18:01:52.075789] E-ID: 45   recived at ( 0, 1)
+ID: 61 [Oct 29 18:01:52.075789] E-ID: 20   recived at ( 6, 1)
+ID: 58 [Oct 29 18:01:52.126141] E-ID:  3    send from ( 5, 8) to ( 6, 8) [S]
+ID: 68 [Oct 29 18:01:52.126157] E-ID:  3   recived at ( 6, 8)
+ID: 26 [Oct 29 18:01:52.126299] E-ID: 54    send from ( 2, 6) to ( 2, 7) [E]
+ID: 27 [Oct 29 18:01:52.126308] E-ID: 54   recived at ( 2, 7)
+ID: 50 [Oct 29 18:01:52.126312] E-ID: 51    send from ( 5, 0) to ( 6, 0) [S]
+ID: 60 [Oct 29 18:01:52.126317] E-ID: 51   recived at ( 6, 0)
+ID: 17 [Oct 29 18:01:52.176504] E-ID: 52    send from ( 1, 7) to ( 0, 7) [N]
+ID:  7 [Oct 29 18:01:52.176524] E-ID: 52   recived at ( 0, 7)
+ID: 77 [Oct 29 18:01:52.176611] E-ID: 79   spawned at ( 7, 7)
+ID: 48 [Oct 29 18:01:52.176642] E-ID: 69    send from ( 4, 8) to ( 5, 8) [S]
+ID: 58 [Oct 29 18:01:52.176663] E-ID: 69   recived at ( 5, 8)
+ID: 10 [Oct 29 18:01:52.227003] E-ID: 32    send from ( 1, 0) to ( 1, 1) [E]
+ID: 11 [Oct 29 18:01:52.227043] E-ID: 32   recived at ( 1, 1)
+ID: 28 [Oct 29 18:01:52.277915] E-ID: 42    send from ( 2, 8) to ( 2, 9) [E]
+ID: 29 [Oct 29 18:01:52.277931] E-ID: 42   recived at ( 2, 9)
+ID: 85 [Oct 29 18:01:52.278013] E-ID: 27    send from ( 8, 5) to ( 9, 5) [S]
+ID: 86 [Oct 29 18:01:52.278028] E-ID: 70    send from ( 8, 6) to ( 8, 5) [W]
+ID: 11 [Oct 29 18:01:52.278042] E-ID: 32    send from ( 1, 1) to ( 2, 1) [S]
+ID: 90 [Oct 29 18:01:52.278055] E-ID: 66    send from ( 9, 0) to ( 9, 1) [E]
+ID: 95 [Oct 29 18:01:52.278055] E-ID: 27   recived at ( 9, 5)
+ID: 85 [Oct 29 18:01:52.278056] E-ID: 70   recived at ( 8, 5)
+ID: 21 [Oct 29 18:01:52.278057] E-ID: 32   recived at ( 2, 1)
+ID: 15 [Oct 29 18:01:52.278060] E-ID: 48    send from ( 1, 5) to ( 1, 4) [W]
+ID: 14 [Oct 29 18:01:52.278061] E-ID: 48   recived at ( 1, 4)
+ID: 35 [Oct 29 18:01:52.278073] E-ID: 29    send from ( 3, 5) to ( 3, 6) [E]
+ID: 91 [Oct 29 18:01:52.278080] E-ID: 66   recived at ( 9, 1)
+ID: 36 [Oct 29 18:01:52.278080] E-ID: 29   recived at ( 3, 6)
+ID: 87 [Oct 29 18:01:52.328395] E-ID: 50    send from ( 8, 7) to ( 8, 6) [W]
+ID: 86 [Oct 29 18:01:52.328445] E-ID: 50   recived at ( 8, 6)
+ID:  5 [Oct 29 18:01:52.328545] E-ID: 67    send from ( 0, 5) to ( 0, 4) [W]
+ID:  4 [Oct 29 18:01:52.328567] E-ID: 67   recived at ( 0, 4)
+ID: 88 [Oct 29 18:01:52.328576] E-ID: 10    send from ( 8, 8) to ( 8, 7) [W]
+ID: 87 [Oct 29 18:01:52.328581] E-ID: 10   recived at ( 8, 7)
+ID: 14 [Oct 29 18:01:52.379142] E-ID: 48    send from ( 1, 4) to ( 1, 3) [W]
+ID: 13 [Oct 29 18:01:52.379156] E-ID: 48   recived at ( 1, 3)
+ID: 25 [Oct 29 18:01:52.379294] E-ID: 19    send from ( 2, 5) to ( 1, 5) [N]
+ID: 15 [Oct 29 18:01:52.379314] E-ID: 19   recived at ( 1, 5)
+ID: 56 [Oct 29 18:01:52.379320] E-ID: 23    send from ( 5, 6) to ( 5, 7) [E]
+ID: 16 [Oct 29 18:01:52.379325] E-ID: 25    send from ( 1, 6) to ( 1, 7) [E]
+ID: 22 [Oct 29 18:01:52.379327] E-ID: 68    send from ( 2, 2) to ( 3, 2) [S]
+ID: 57 [Oct 29 18:01:52.379329] E-ID: 23   recived at ( 5, 7)
+ID: 17 [Oct 29 18:01:52.379330] E-ID: 25   recived at ( 1, 7)
+ID: 32 [Oct 29 18:01:52.379334] E-ID: 68   recived at ( 3, 2)
+ID: 86 [Oct 29 18:01:52.429378] E-ID: 50    send from ( 8, 6) to ( 7, 6) [N]
+ID: 57 [Oct 29 18:01:52.429423] E-ID: 23    send from ( 5, 7) to ( 5, 6) [W]
+ID: 76 [Oct 29 18:01:52.429433] E-ID: 50   recived at ( 7, 6)
+ID: 56 [Oct 29 18:01:52.429435] E-ID: 23   recived at ( 5, 6)
+ID: 98 [Oct 29 18:01:52.429445] E-ID: 36    send from ( 9, 8) to ( 8, 8) [N]
+ID: 95 [Oct 29 18:01:52.429453] E-ID: 27    send from ( 9, 5) to ( 9, 6) [E]
+ID: 96 [Oct 29 18:01:52.429463] E-ID: 27   recived at ( 9, 6)
+ID: 88 [Oct 29 18:01:52.429488] E-ID: 36   recived at ( 8, 8)
+ID: 94 [Oct 29 18:01:52.479915] E-ID: 65    send from ( 9, 4) to ( 9, 5) [E]
+ID: 87 [Oct 29 18:01:52.479939] E-ID: 10    send from ( 8, 7) to ( 8, 6) [W]
+ID: 18 [Oct 29 18:01:52.479952] E-ID: 44    send from ( 1, 8) to ( 2, 8) [S]
+ID: 86 [Oct 29 18:01:52.479992] E-ID: 10   recived at ( 8, 6)
+ID: 95 [Oct 29 18:01:52.479995] E-ID: 65   recived at ( 9, 5)
+ID: 28 [Oct 29 18:01:52.479996] E-ID: 44   recived at ( 2, 8)
+ID: 38 [Oct 29 18:01:52.480022] E-ID:  9    send from ( 3, 8) to ( 4, 8) [S]
+ID: 48 [Oct 29 18:01:52.480023] E-ID:  9   recived at ( 4, 8)
+ID: 13 [Oct 29 18:01:52.480031] E-ID: 48    send from ( 1, 3) to ( 1, 4) [E]
+ID: 14 [Oct 29 18:01:52.480032] E-ID: 48   recived at ( 1, 4)
+ID: 95 [Oct 29 18:01:52.531123] E-ID: 65    send from ( 9, 5) to ( 9, 4) [W]
+ID:  8 [Oct 29 18:01:52.531126] E-ID: 53    send from ( 0, 8) to ( 1, 8) [S]
+ID: 18 [Oct 29 18:01:52.531127] E-ID: 53   recived at ( 1, 8)
+ID: 94 [Oct 29 18:01:52.531139] E-ID: 65   recived at ( 9, 4)
+ID: 88 [Oct 29 18:01:52.581987] E-ID: 36    send from ( 8, 8) to ( 8, 7) [W]
+ID: 87 [Oct 29 18:01:52.582027] E-ID: 36   recived at ( 8, 7)
+ID: 56 [Oct 29 18:01:52.682555] E-ID: 23    send from ( 5, 6) to ( 5, 7) [E]
+ID: 57 [Oct 29 18:01:52.682588] E-ID: 23   recived at ( 5, 7)
+ID: 91 [Oct 29 18:01:52.682651] E-ID: 66    send from ( 9, 1) to ( 9, 0) [W]
+ID: 85 [Oct 29 18:01:52.682667] E-ID: 70    send from ( 8, 5) to ( 9, 5) [S]
+ID: 90 [Oct 29 18:01:52.682696] E-ID: 66   recived at ( 9, 0)
+ID: 95 [Oct 29 18:01:52.682722] E-ID: 70   recived at ( 9, 5)
+ID: 95 [Oct 29 18:01:52.732959] E-ID: 70    send from ( 9, 5) to ( 8, 5) [N]
+ID: 46 [Oct 29 18:01:52.732997] E-ID: 33    send from ( 4, 6) to ( 5, 6) [S]
+ID: 56 [Oct 29 18:01:52.733008] E-ID: 33   recived at ( 5, 6)
+ID: 85 [Oct 29 18:01:52.733031] E-ID: 70   recived at ( 8, 5)
+ID: 58 [Oct 29 18:01:52.733054] E-ID: 69    send from ( 5, 8) to ( 5, 9) [E]
+ID: 59 [Oct 29 18:01:52.733064] E-ID: 69   recived at ( 5, 9)
+ID: 51 [Oct 29 18:01:52.783650] E-ID:  5    send from ( 5, 1) to ( 5, 0) [W]
+ID: 50 [Oct 29 18:01:52.783677] E-ID:  5   recived at ( 5, 0)
+ID:  1 [Oct 29 18:01:52.783705] E-ID: 45    send from ( 0, 1) to ( 1, 1) [S]
+ID: 11 [Oct 29 18:01:52.783719] E-ID: 45   recived at ( 1, 1)
+ID: 36 [Oct 29 18:01:52.834300] E-ID: 29    send from ( 3, 6) to ( 4, 6) [S]
+ID: 46 [Oct 29 18:01:52.834301] E-ID: 29   recived at ( 4, 6)
+ID: 10 [Oct 29 18:01:52.885219] E-ID: 80   spawned at ( 1, 0)
+ID: 23 [Oct 29 18:01:52.885237] E-ID: 76    send from ( 2, 3) to ( 2, 2) [W]
+ID: 52 [Oct 29 18:01:52.885248] E-ID: 78    send from ( 5, 2) to ( 5, 1) [W]
+ID: 18 [Oct 29 18:01:52.885261] E-ID: 53    send from ( 1, 8) to ( 0, 8) [N]
+ID: 22 [Oct 29 18:01:52.885265] E-ID: 76   recived at ( 2, 2)
+ID: 51 [Oct 29 18:01:52.885266] E-ID: 78   recived at ( 5, 1)
+ID:  8 [Oct 29 18:01:52.885272] E-ID: 53   recived at ( 0, 8)
+ID: 95 [Oct 29 18:01:52.935634] E-ID: 81   spawned at ( 9, 5)
+ID: 27 [Oct 29 18:01:52.935669] E-ID: 54    send from ( 2, 7) to ( 2, 6) [W]
+ID: 28 [Oct 29 18:01:52.935688] E-ID: 44    send from ( 2, 8) to ( 2, 7) [W]
+ID: 26 [Oct 29 18:01:52.935698] E-ID: 54   recived at ( 2, 6)
+ID: 27 [Oct 29 18:01:52.935700] E-ID: 44   recived at ( 2, 7)
+ID: 11 [Oct 29 18:01:52.985874] E-ID: 45    send from ( 1, 1) to ( 0, 1) [N]
+ID: 57 [Oct 29 18:01:52.985912] E-ID: 23    send from ( 5, 7) to ( 5, 8) [E]
+ID: 41 [Oct 29 18:01:52.985918] E-ID: 63    send from ( 4, 1) to ( 4, 0) [W]
+ID: 51 [Oct 29 18:01:52.985930] E-ID: 78    send from ( 5, 1) to ( 4, 1) [N]
+ID: 21 [Oct 29 18:01:52.985936] E-ID: 32    send from ( 2, 1) to ( 2, 0) [W]
+ID:  1 [Oct 29 18:01:52.985950] E-ID: 45   recived at ( 0, 1)
+ID: 58 [Oct 29 18:01:52.985952] E-ID: 23   recived at ( 5, 8)
+ID: 40 [Oct 29 18:01:52.985954] E-ID: 63   recived at ( 4, 0)
+ID: 41 [Oct 29 18:01:52.985956] E-ID: 78   recived at ( 4, 1)
+ID: 20 [Oct 29 18:01:52.985957] E-ID: 32   recived at ( 2, 0)
+ID: 31 [Oct 29 18:01:52.985960] E-ID: 28    send from ( 3, 1) to ( 2, 1) [N]
+ID: 21 [Oct 29 18:01:52.985963] E-ID: 28   recived at ( 2, 1)
+ID: 21 [Oct 29 18:01:53.036368] E-ID: 28    send from ( 2, 1) to ( 3, 1) [S]
+ID: 48 [Oct 29 18:01:53.036389] E-ID:  9    send from ( 4, 8) to ( 3, 8) [N]
+ID: 31 [Oct 29 18:01:53.036434] E-ID: 28   recived at ( 3, 1)
+ID: 38 [Oct 29 18:01:53.036437] E-ID:  9   recived at ( 3, 8)
+ID: 67 [Oct 29 18:01:53.036461] E-ID: 57    send from ( 6, 7) to ( 5, 7) [N]
+ID: 57 [Oct 29 18:01:53.036462] E-ID: 57   recived at ( 5, 7)
+ID: 38 [Oct 29 18:01:53.137077] E-ID:  9    send from ( 3, 8) to ( 2, 8) [N]
+ID: 39 [Oct 29 18:01:53.137109] E-ID: 35    send from ( 3, 9) to ( 3, 8) [W]
+ID: 28 [Oct 29 18:01:53.137138] E-ID:  9   recived at ( 2, 8)
+ID: 38 [Oct 29 18:01:53.137140] E-ID: 35   recived at ( 3, 8)
+ID: 62 [Oct 29 18:01:53.137149] E-ID:  7    send from ( 6, 2) to ( 5, 2) [N]
+ID: 52 [Oct 29 18:01:53.137157] E-ID:  7   recived at ( 5, 2)
+ID: 29 [Oct 29 18:01:53.238935] E-ID: 42    send from ( 2, 9) to ( 3, 9) [S]
+ID: 39 [Oct 29 18:01:53.238972] E-ID: 42   recived at ( 3, 9)
+ID: 10 [Oct 29 18:01:53.238975] E-ID: 80    send from ( 1, 0) to ( 1, 1) [E]
+ID: 22 [Oct 29 18:01:53.238980] E-ID: 76    send from ( 2, 2) to ( 2, 1) [W]
+ID: 11 [Oct 29 18:01:53.238986] E-ID: 80   recived at ( 1, 1)
+ID: 52 [Oct 29 18:01:53.238989] E-ID:  7    send from ( 5, 2) to ( 5, 1) [W]
+ID: 51 [Oct 29 18:01:53.238990] E-ID:  7   recived at ( 5, 1)
+ID: 37 [Oct 29 18:01:53.238994] E-ID: 39    send from ( 3, 7) to ( 3, 6) [W]
+ID: 21 [Oct 29 18:01:53.238996] E-ID: 76   recived at ( 2, 1)
+ID: 36 [Oct 29 18:01:53.238997] E-ID: 39   recived at ( 3, 6)
+ID: 42 [Oct 29 18:01:53.289106] E-ID:  4    send from ( 4, 2) to ( 5, 2) [S]
+ID: 90 [Oct 29 18:01:53.289132] E-ID: 66    send from ( 9, 0) to ( 9, 1) [E]
+ID: 52 [Oct 29 18:01:53.289139] E-ID:  4   recived at ( 5, 2)
+ID: 91 [Oct 29 18:01:53.289141] E-ID: 66   recived at ( 9, 1)
+ID: 38 [Oct 29 18:01:53.339728] E-ID: 35    send from ( 3, 8) to ( 4, 8) [S]
+ID: 48 [Oct 29 18:01:53.339748] E-ID: 35   recived at ( 4, 8)
+ID: 39 [Oct 29 18:01:53.339753] E-ID: 42    send from ( 3, 9) to ( 2, 9) [N]
+ID: 29 [Oct 29 18:01:53.339758] E-ID: 42   recived at ( 2, 9)
+ID: 26 [Oct 29 18:01:53.389972] E-ID: 54    send from ( 2, 6) to ( 2, 5) [W]
+ID: 48 [Oct 29 18:01:53.390029] E-ID: 35    send from ( 4, 8) to ( 3, 8) [N]
+ID: 25 [Oct 29 18:01:53.390039] E-ID: 54   recived at ( 2, 5)
+ID: 38 [Oct 29 18:01:53.390041] E-ID: 35   recived at ( 3, 8)
+ID: 14 [Oct 29 18:01:53.390053] E-ID: 48    send from ( 1, 4) to ( 2, 4) [S]
+ID: 24 [Oct 29 18:01:53.390059] E-ID: 48   recived at ( 2, 4)
+ID: 33 [Oct 29 18:01:53.390065] E-ID:  6    send from ( 3, 3) to ( 2, 3) [N]
+ID: 36 [Oct 29 18:01:53.390069] E-ID: 39    send from ( 3, 6) to ( 3, 7) [E]
+ID: 23 [Oct 29 18:01:53.390076] E-ID:  6   recived at ( 2, 3)
+ID: 37 [Oct 29 18:01:53.390078] E-ID: 39   recived at ( 3, 7)
+ID: 20 [Oct 29 18:01:53.440710] E-ID: 32    send from ( 2, 0) to ( 1, 0) [N]
+ID: 10 [Oct 29 18:01:53.440720] E-ID: 32   recived at ( 1, 0)
+ID:  6 [Oct 29 18:01:53.491162] E-ID: 22    send from ( 0, 6) to ( 1, 6) [S]
+ID: 16 [Oct 29 18:01:53.491209] E-ID: 22   recived at ( 1, 6)
+ID: 17 [Oct 29 18:01:53.541500] E-ID: 25    send from ( 1, 7) to ( 1, 8) [E]
+ID: 24 [Oct 29 18:01:53.541554] E-ID: 48    send from ( 2, 4) to ( 1, 4) [N]
+ID: 14 [Oct 29 18:01:53.541565] E-ID: 48   recived at ( 1, 4)
+ID: 18 [Oct 29 18:01:53.541565] E-ID: 25   recived at ( 1, 8)
+ID: 18 [Oct 29 18:01:53.591978] E-ID: 25    send from ( 1, 8) to ( 1, 7) [W]
+ID: 17 [Oct 29 18:01:53.591998] E-ID: 25   recived at ( 1, 7)
+ID: 91 [Oct 29 18:01:53.592131] E-ID: 66    send from ( 9, 1) to ( 9, 0) [W]
+ID: 25 [Oct 29 18:01:53.592157] E-ID: 54    send from ( 2, 5) to ( 2, 6) [E]
+ID: 90 [Oct 29 18:01:53.592163] E-ID: 66   recived at ( 9, 0)
+ID: 26 [Oct 29 18:01:53.592165] E-ID: 54   recived at ( 2, 6)
+ID: 32 [Oct 29 18:01:53.592177] E-ID: 68    send from ( 3, 2) to ( 3, 3) [E]
+ID: 33 [Oct 29 18:01:53.592180] E-ID: 68   recived at ( 3, 3)
+ID: 19 [Oct 29 18:01:53.642332] E-ID: 77    send from ( 1, 9) to ( 1, 8) [W]
+ID: 18 [Oct 29 18:01:53.642350] E-ID: 77   recived at ( 1, 8)
+ID: 31 [Oct 29 18:01:53.642436] E-ID: 28    send from ( 3, 1) to ( 3, 2) [E]
+ID: 68 [Oct 29 18:01:53.642470] E-ID:  3    send from ( 6, 8) to ( 6, 7) [W]
+ID: 92 [Oct 29 18:01:53.642487] E-ID: 74    send from ( 9, 2) to ( 9, 1) [W]
+ID: 32 [Oct 29 18:01:53.642491] E-ID: 28   recived at ( 3, 2)
+ID: 67 [Oct 29 18:01:53.642493] E-ID:  3   recived at ( 6, 7)
+ID: 91 [Oct 29 18:01:53.642518] E-ID: 74   recived at ( 9, 1)
+ID: 48 [Oct 29 18:01:53.692743] E-ID: 82   spawned at ( 4, 8)
+ID: 32 [Oct 29 18:01:53.692760] E-ID: 28    send from ( 3, 2) to ( 2, 2) [N]
+ID: 22 [Oct 29 18:01:53.692765] E-ID: 28   recived at ( 2, 2)
+ID: 58 [Oct 29 18:01:53.743828] E-ID: 23    send from ( 5, 8) to ( 6, 8) [S]
+ID: 23 [Oct 29 18:01:53.743852] E-ID:  6    send from ( 2, 3) to ( 2, 4) [E]
+ID: 26 [Oct 29 18:01:53.743856] E-ID: 54    send from ( 2, 6) to ( 3, 6) [S]
+ID: 68 [Oct 29 18:01:53.743859] E-ID: 23   recived at ( 6, 8)
+ID: 24 [Oct 29 18:01:53.743861] E-ID:  6   recived at ( 2, 4)
+ID: 36 [Oct 29 18:01:53.743863] E-ID: 54   recived at ( 3, 6)
+ID: 87 [Oct 29 18:01:53.794173] E-ID: 36    send from ( 8, 7) to ( 8, 8) [E]
+ID: 88 [Oct 29 18:01:53.794203] E-ID: 36   recived at ( 8, 8)
+ID: 49 [Oct 29 18:01:53.844600] E-ID: 11    send from ( 4, 9) to ( 3, 9) [N]
+ID: 99 [Oct 29 18:01:53.844618] E-ID: 37    send from ( 9, 9) to ( 9, 8) [W]
+ID: 39 [Oct 29 18:01:53.844639] E-ID: 11   recived at ( 3, 9)
+ID: 98 [Oct 29 18:01:53.844642] E-ID: 37   recived at ( 9, 8)
+ID: 57 [Oct 29 18:01:53.844654] E-ID: 57    send from ( 5, 7) to ( 5, 8) [E]
+ID: 58 [Oct 29 18:01:53.844657] E-ID: 57   recived at ( 5, 8)
+ID: 88 [Oct 29 18:01:53.895151] E-ID: 36    send from ( 8, 8) to ( 8, 7) [W]
+ID:  3 [Oct 29 18:01:53.895178] E-ID:  8    send from ( 0, 3) to ( 1, 3) [S]
+ID: 87 [Oct 29 18:01:53.895202] E-ID: 36   recived at ( 8, 7)
+ID: 13 [Oct 29 18:01:53.895215] E-ID:  8   recived at ( 1, 3)
+ID: 82 [Oct 29 18:01:53.945760] E-ID: 55    send from ( 8, 2) to ( 9, 2) [S]
+ID: 43 [Oct 29 18:01:53.945780] E-ID: 24    send from ( 4, 3) to ( 4, 2) [W]
+ID: 92 [Oct 29 18:01:53.945784] E-ID: 55   recived at ( 9, 2)
+ID: 42 [Oct 29 18:01:53.945787] E-ID: 24   recived at ( 4, 2)
+ID: 41 [Oct 29 18:01:53.945852] E-ID: 78    send from ( 4, 1) to ( 3, 1) [N]
+ID: 48 [Oct 29 18:01:53.945863] E-ID: 82    send from ( 4, 8) to ( 4, 9) [E]
+ID: 51 [Oct 29 18:01:53.945880] E-ID:  7    send from ( 5, 1) to ( 4, 1) [N]
+ID: 31 [Oct 29 18:01:53.945898] E-ID: 78   recived at ( 3, 1)
+ID: 49 [Oct 29 18:01:53.945901] E-ID: 82   recived at ( 4, 9)
+ID: 41 [Oct 29 18:01:53.945903] E-ID:  7   recived at ( 4, 1)
+ID: 49 [Oct 29 18:01:53.996216] E-ID: 82    send from ( 4, 9) to ( 4, 8) [W]
+ID: 48 [Oct 29 18:01:53.996228] E-ID: 82   recived at ( 4, 8)
+ID: 13 [Oct 29 18:01:53.996245] E-ID:  8    send from ( 1, 3) to ( 2, 3) [S]
+ID: 23 [Oct 29 18:01:53.996269] E-ID:  8   recived at ( 2, 3)
+ID: 78 [Oct 29 18:01:54.047249] E-ID: 64    send from ( 7, 8) to ( 8, 8) [S]
+ID: 88 [Oct 29 18:01:54.047279] E-ID: 64   recived at ( 8, 8)
