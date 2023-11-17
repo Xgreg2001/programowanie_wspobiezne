@@ -1,7 +1,9 @@
 package main
 
 import (
+	"fmt"
 	"math/rand"
+	"os"
 	"sync/atomic"
 	"time"
 )
@@ -12,22 +14,24 @@ type Explorer struct {
 	lattice *Lattice
 	x       int
 	y       int
-	current chan<- ExplorerMessage
-	north   chan<- ExplorerMessage
-	south   chan<- ExplorerMessage
-	east    chan<- ExplorerMessage
-	west    chan<- ExplorerMessage
+	current chan Message
+	north   chan Message
+	south   chan Message
+	east    chan Message
+	west    chan Message
 }
 
-type ExplorerMessageType int
+type MessageType int
 
-type ExplorerMessage struct {
-	msgType ExplorerMessageType
-	id      int
+type Message struct {
+	msgType MessageType
+	expId   int
 }
 
 const (
-	ExplorerMessageEnter ExplorerMessageType = iota
+	ExplorerMessageEnter MessageType = iota
+	ExplorerMessageEnterConfirm
+	ExplorerMessegeEnterHazard
 	ExplorerMessageLeave
 	ExplorerMessageReady
 )
@@ -35,43 +39,84 @@ const (
 func (e *Explorer) run(quit *atomic.Bool, logChannel chan<- LogMessage) {
 	e.AttachLogger(logChannel)
 
+L:
 	for !quit.Load() {
-		exploreTimer := time.NewTimer(moveExplorerTick)
+		timer := time.NewTimer(tickTime)
 
-		<-exploreTimer.C
+		<-timer.C
 
 		if rand.Float64() < moveExplorerRate {
 			moved := false
 			// try to move to one of the neighboring vertices
-			msg := ExplorerMessage{msgType: ExplorerMessageEnter, id: e.id}
+			msg := Message{msgType: ExplorerMessageEnter, expId: e.id}
 			select {
 			case e.north <- msg:
-				e.LogExplorerMoved(North)
-				e.y -= 1
-				moved = true
+				res := <-e.north
+				switch res.msgType {
+				case ExplorerMessageEnterConfirm:
+					e.LogExplorerMoved(North)
+					e.y -= 1
+					moved = true
+				case ExplorerMessegeEnterHazard:
+					e.LogExplorerDied()
+					e.current <- Message{msgType: ExplorerMessageLeave, expId: e.id}
+					break L
+				default:
+					fmt.Fprintln(os.Stderr, "ERROR: this type of message should not be handled here:", res)
+				}
 			case e.south <- msg:
-				e.LogExplorerMoved(South)
-				e.y += 1
-				moved = true
+				res := <-e.south
+				switch res.msgType {
+				case ExplorerMessageEnterConfirm:
+					e.LogExplorerMoved(South)
+					e.y += 1
+					moved = true
+				case ExplorerMessegeEnterHazard:
+					e.LogExplorerDied()
+					e.current <- Message{msgType: ExplorerMessageLeave, expId: e.id}
+					break L
+				default:
+					fmt.Fprintln(os.Stderr, "ERROR: this type of message should not be handled here:", res)
+				}
 			case e.east <- msg:
-				e.LogExplorerMoved(East)
-				e.x += 1
-				moved = true
+				res := <-e.east
+				switch res.msgType {
+				case ExplorerMessageEnterConfirm:
+					e.LogExplorerMoved(East)
+					e.x += 1
+					moved = true
+				case ExplorerMessegeEnterHazard:
+					e.LogExplorerDied()
+					e.current <- Message{msgType: ExplorerMessageLeave, expId: e.id}
+					break L
+				default:
+					fmt.Fprintln(os.Stderr, "ERROR: this type of message should not be handled here:", res)
+				}
 			case e.west <- msg:
-				e.LogExplorerMoved(West)
-				e.x -= 1
-				moved = true
+				res := <-e.west
+				switch res.msgType {
+				case ExplorerMessageEnterConfirm:
+					e.LogExplorerMoved(West)
+					e.x -= 1
+					moved = true
+				case ExplorerMessegeEnterHazard:
+					e.LogExplorerDied()
+					e.current <- Message{msgType: ExplorerMessageLeave, expId: e.id}
+					break L
+				default:
+					fmt.Fprintln(os.Stderr, "ERROR: this type of message should not be handled here:", res)
+				}
 			default:
 				// no neighbor is available, so we reset the timer
 			}
 
 			if moved {
-				e.current <- ExplorerMessage{msgType: ExplorerMessageLeave, id: e.id}
+				e.current <- Message{msgType: ExplorerMessageLeave, expId: e.id}
 				e.updateChannels()
 			}
 		}
 
-		exploreTimer.Stop()
+		timer.Stop()
 	}
 }
 

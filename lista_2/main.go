@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"os"
 	"strconv"
 	"sync"
@@ -9,18 +10,25 @@ import (
 )
 
 const (
-	spawnExplorerTick = 50 * time.Millisecond
-	moveExplorerTick  = 50 * time.Millisecond
+	tickTime          = 50 * time.Millisecond
 	spawnExplorerRate = 0.01
 	moveExplorerRate  = 0.10
+	spawnHazardRate   = 0.01
+	hazardLifeTime    = 10 * tickTime
 	logBuffer         = 100
 	runTime           = 10 * time.Second
 	cameraTick        = 300 * time.Millisecond
 	cameraBuffer      = 100
 )
 
+type ExplorerStats struct {
+	count  int
+	nextId int
+	mu     sync.Mutex
+}
+
 func main() {
-	explorerCount := atomic.Uint64{}
+	explorerStats := ExplorerStats{count: 0, nextId: 1}
 	quit := atomic.Bool{}
 
 	n := 10
@@ -73,19 +81,29 @@ func main() {
 	for i := 0; i < n; i++ {
 		for j := 0; j < m; j++ {
 			go func(v Vertex) {
-				v.run(&explorerWg, &explorerCount, &quit, maxExplorers, logChannel, &lattice)
+				v.run(&explorerWg, &explorerStats, &quit, maxExplorers, logChannel, &lattice)
 				vertexWg.Done()
 			}(lattice.vertices[i][j])
 		}
 	}
 
 	time.Sleep(runTime)
+
+	fmt.Println("INFO: starting the exit sequence")
+
 	quit.Store(true)
+
 	vertexWg.Wait()
+	fmt.Println("INFO: all vertex routines finished")
+
 	explorerWg.Wait()
+	fmt.Println("INFO: all explorer routines finished")
 
 	close(logChannel)
 
 	<-loggerDone
+	fmt.Println("INFO: logger routine finished")
+
 	<-cameraDone
+	fmt.Println("INFO: camera routine finished")
 }

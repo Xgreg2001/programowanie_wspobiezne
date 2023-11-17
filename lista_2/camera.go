@@ -11,11 +11,11 @@ const (
 )
 
 type Camera struct {
-	cameraChanel <-chan CameraMessage
-	board        [][]Explorer
-	n            int
-	m            int
-	crossedEdges [][]bool
+	cameraChannel <-chan CameraMessage
+	board         [][]string
+	n             int
+	m             int
+	crossedEdges  [][]bool
 }
 
 type CameraMessage struct {
@@ -32,6 +32,9 @@ type CameraMessageType int
 const (
 	CamExplorerSpawned CameraMessageType = iota
 	CamExplorerMoved
+	CamHazardSpawned
+	CamHazardRemoved
+	CamExplorerRemoved
 )
 
 func RecordSpawnExplorer(expId, x, y int) CameraMessage {
@@ -42,6 +45,18 @@ func RecordMoveExplorer(expId, fromX, fromY, toX, toY int) CameraMessage {
 	return CameraMessage{expId: expId, x: fromX, y: fromY, xHelper: toX, yHelper: toY, messageType: CamExplorerMoved}
 }
 
+func RecordSpawnHazard(x, y int) CameraMessage {
+	return CameraMessage{messageType: CamHazardSpawned, x: x, y: y}
+}
+
+func RecordRemoveHazard(x, y int) CameraMessage {
+	return CameraMessage{messageType: CamHazardRemoved, x: x, y: y}
+}
+
+func RecordRemoveExplorer(expId, x, y int) CameraMessage {
+	return CameraMessage{messageType: CamExplorerRemoved, x: x, y: y, expId: expId}
+}
+
 func (c Camera) PrintBoard() {
 	c.PrintBoardSeparator()
 	bottomRow := "+"
@@ -50,8 +65,8 @@ func (c Camera) PrintBoard() {
 		for x := 0; x < c.n; x++ {
 			vertId := y*c.n + x
 
-			if c.board[y][x].id != 0 {
-				fmt.Printf("%02d", c.board[y][x].id)
+			if c.board[y][x] != "" {
+				fmt.Printf("%2s", c.board[y][x])
 			} else {
 				fmt.Printf("  ")
 			}
@@ -91,18 +106,24 @@ func (c Camera) Start() {
 		select {
 		case <-ticker.C:
 			c.PrintBoard()
-		case msg, ok := <-c.cameraChanel:
+		case msg, ok := <-c.cameraChannel:
 			switch msg.messageType {
 			case CamExplorerSpawned:
-				c.board[msg.y][msg.x] = Explorer{id: msg.expId}
+				c.board[msg.y][msg.x] = fmt.Sprintf("%02d", msg.expId)
 			case CamExplorerMoved:
-				c.board[msg.y][msg.x] = Explorer{}
-				c.board[msg.yHelper][msg.xHelper] = Explorer{id: msg.expId}
+				c.board[msg.y][msg.x] = ""
+				c.board[msg.yHelper][msg.xHelper] = fmt.Sprintf("%02d", msg.expId)
 
 				fromId := msg.y*c.n + msg.x
 				toId := msg.yHelper*c.n + msg.xHelper
 				c.crossedEdges[fromId][toId] = true
 				c.crossedEdges[toId][fromId] = true
+			case CamHazardSpawned:
+				c.board[msg.y][msg.x] = "##"
+			case CamHazardRemoved:
+				c.board[msg.y][msg.x] = ""
+			case CamExplorerRemoved:
+				c.board[msg.y][msg.x] = ""
 			}
 
 			if !ok {
@@ -129,13 +150,10 @@ func (c Camera) PrintBoardSeparator() {
 	fmt.Println()
 }
 
-func NewCamera(cameraChanel <-chan CameraMessage, n, m int) Camera {
-	board := make([][]Explorer, n)
+func NewCamera(cameraChannel <-chan CameraMessage, n, m int) Camera {
+	board := make([][]string, n)
 	for y := 0; y < m; y++ {
-		board[y] = make([]Explorer, n)
-		for x := 0; x < n; x++ {
-			board[y][x] = Explorer{}
-		}
+		board[y] = make([]string, n)
 	}
 
 	numbVert := n * m
@@ -147,5 +165,5 @@ func NewCamera(cameraChanel <-chan CameraMessage, n, m int) Camera {
 		}
 	}
 
-	return Camera{cameraChanel: cameraChanel, board: board, n: n, m: m, crossedEdges: crossedEdges}
+	return Camera{cameraChannel: cameraChannel, board: board, n: n, m: m, crossedEdges: crossedEdges}
 }
