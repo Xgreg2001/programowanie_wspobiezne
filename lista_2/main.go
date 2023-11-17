@@ -1,7 +1,6 @@
 package main
 
 import (
-	"math/rand"
 	"os"
 	"strconv"
 	"sync"
@@ -19,56 +18,6 @@ const (
 	cameraTick        = 300 * time.Millisecond
 	cameraBuffer      = 100
 )
-
-func runner(v Vertex, explorerCount *atomic.Uint64, quit *atomic.Bool, maxExplorers int, logChanel chan<- LogPayload) {
-	logger := v.CreateLogger(logChanel)
-
-	for !quit.Load() {
-		spawnTimer := time.NewTimer(spawnExplorerTick)
-		exploreTimer := time.NewTimer(moveExplorerTick)
-
-		if v.explorer == nil {
-			// we don't currently have an explorer, so we can either spawn one or accept one from a neighbor
-			select {
-			case e := <-v.self:
-				v.explorer = e
-				logger.LogExplorerReceived(v.explorer.id)
-			case <-spawnTimer.C:
-				if rand.Float64() < spawnExplorerRate && explorerCount.Load() < uint64(maxExplorers-1) {
-					id := explorerCount.Add(1)
-					v.explorer = &Explorer{id: int(id)}
-					logger.LogExplorerSpawned(v.explorer.id)
-				}
-			}
-		} else {
-			// we have an explorer, so we can try to move it to a neighbor
-			<-exploreTimer.C
-
-			if rand.Float64() < moveExplorerRate {
-				// try to move the explorer to a neighbor
-				select {
-				case v.north <- v.explorer:
-					logger.LogExplorerSend(v.explorer.id, North)
-					v.explorer = nil
-				case v.south <- v.explorer:
-					logger.LogExplorerSend(v.explorer.id, South)
-					v.explorer = nil
-				case v.east <- v.explorer:
-					logger.LogExplorerSend(v.explorer.id, East)
-					v.explorer = nil
-				case v.west <- v.explorer:
-					logger.LogExplorerSend(v.explorer.id, West)
-					v.explorer = nil
-				default:
-					// no neighbor is available, so we just keep the explorer
-				}
-			}
-		}
-
-		spawnTimer.Stop()
-		exploreTimer.Stop()
-	}
-}
 
 func main() {
 	explorerCount := atomic.Uint64{}
@@ -99,23 +48,11 @@ func main() {
 
 	maxExplorers := n * m
 
-	vertices := CreateLattice(n, m)
-	logChannel := make(chan LogPayload, logBuffer)
+	lattice := CreateLattice(n, m)
+	logChannel := make(chan LogMessage, logBuffer)
 	loggerDone := make(chan bool)
 	cameraChanel := make(chan CameraMessage, cameraBuffer)
 	cameraDone := make(chan bool)
-
-	wg := sync.WaitGroup{}
-	wg.Add(n * m)
-
-	for i := 0; i < n; i++ {
-		for j := 0; j < m; j++ {
-			go func(v Vertex) {
-				runner(v, &explorerCount, &quit, maxExplorers, logChannel)
-				wg.Done()
-			}(vertices[i][j])
-		}
-	}
 
 	go func() {
 		loggerRun(logChannel, cameraChanel)
@@ -128,9 +65,24 @@ func main() {
 		cameraDone <- true
 	}()
 
+	vertexWg := sync.WaitGroup{}
+	vertexWg.Add(n * m)
+
+	explorerWg := sync.WaitGroup{}
+
+	for i := 0; i < n; i++ {
+		for j := 0; j < m; j++ {
+			go func(v Vertex) {
+				v.run(&explorerWg, &explorerCount, &quit, maxExplorers, logChannel, &lattice)
+				vertexWg.Done()
+			}(lattice.vertices[i][j])
+		}
+	}
+
 	time.Sleep(runTime)
 	quit.Store(true)
-	wg.Wait()
+	vertexWg.Wait()
+	explorerWg.Wait()
 
 	close(logChannel)
 
