@@ -9,6 +9,8 @@ import (
 	"time"
 )
 
+// TODO: Make error messages more meaningful
+
 const (
 	tickTime          = 50 * time.Millisecond
 	spawnExplorerRate = 0.01

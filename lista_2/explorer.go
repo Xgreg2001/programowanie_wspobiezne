@@ -9,23 +9,25 @@ import (
 )
 
 type Explorer struct {
-	logger  *ExplorerLogger
-	id      int
-	lattice *Lattice
-	x       int
-	y       int
-	current chan Message
-	north   chan Message
-	south   chan Message
-	east    chan Message
-	west    chan Message
+	logger   *ExplorerLogger
+	id       int
+	lattice  *Lattice
+	x        int
+	y        int
+	responds chan Message
+	current  chan<- Message
+	north    chan<- Message
+	south    chan<- Message
+	east     chan<- Message
+	west     chan<- Message
 }
 
 type MessageType int
 
 type Message struct {
-	msgType MessageType
-	expId   int
+	msgType         MessageType
+	expId           int
+	responseChannel chan<- Message
 }
 
 const (
@@ -38,76 +40,33 @@ const (
 
 func (e *Explorer) run(quit *atomic.Bool, logChannel chan<- LogMessage) {
 	e.AttachLogger(logChannel)
+	ticker := time.NewTicker(tickTime)
+	defer ticker.Stop()
 
-L:
 	for !quit.Load() {
-		timer := time.NewTimer(tickTime)
-
-		<-timer.C
+		<-ticker.C
 
 		if rand.Float64() < moveExplorerRate {
-			moved := false
-			// try to move to one of the neighboring vertices
-			msg := Message{msgType: ExplorerMessageEnter, expId: e.id}
+			var moved bool
+			var alive bool
+			msg := Message{msgType: ExplorerMessageEnter, expId: e.id, responseChannel: e.responds}
 			select {
 			case e.north <- msg:
-				res := <-e.north
-				switch res.msgType {
-				case ExplorerMessageEnterConfirm:
-					e.LogExplorerMoved(North)
-					e.y -= 1
-					moved = true
-				case ExplorerMessegeEnterHazard:
-					e.LogExplorerDied()
-					e.current <- Message{msgType: ExplorerMessageLeave, expId: e.id}
-					break L
-				default:
-					fmt.Fprintln(os.Stderr, "ERROR: this type of message should not be handled here:", res)
-				}
+				alive, moved = e.handleResponse(quit, North)
 			case e.south <- msg:
-				res := <-e.south
-				switch res.msgType {
-				case ExplorerMessageEnterConfirm:
-					e.LogExplorerMoved(South)
-					e.y += 1
-					moved = true
-				case ExplorerMessegeEnterHazard:
-					e.LogExplorerDied()
-					e.current <- Message{msgType: ExplorerMessageLeave, expId: e.id}
-					break L
-				default:
-					fmt.Fprintln(os.Stderr, "ERROR: this type of message should not be handled here:", res)
-				}
+				alive, moved = e.handleResponse(quit, South)
 			case e.east <- msg:
-				res := <-e.east
-				switch res.msgType {
-				case ExplorerMessageEnterConfirm:
-					e.LogExplorerMoved(East)
-					e.x += 1
-					moved = true
-				case ExplorerMessegeEnterHazard:
-					e.LogExplorerDied()
-					e.current <- Message{msgType: ExplorerMessageLeave, expId: e.id}
-					break L
-				default:
-					fmt.Fprintln(os.Stderr, "ERROR: this type of message should not be handled here:", res)
-				}
+				alive, moved = e.handleResponse(quit, East)
 			case e.west <- msg:
-				res := <-e.west
-				switch res.msgType {
-				case ExplorerMessageEnterConfirm:
-					e.LogExplorerMoved(West)
-					e.x -= 1
-					moved = true
-				case ExplorerMessegeEnterHazard:
-					e.LogExplorerDied()
-					e.current <- Message{msgType: ExplorerMessageLeave, expId: e.id}
-					break L
-				default:
-					fmt.Fprintln(os.Stderr, "ERROR: this type of message should not be handled here:", res)
-				}
+				alive, moved = e.handleResponse(quit, West)
 			default:
 				// no neighbor is available, so we reset the timer
+				moved = false
+				alive = true
+			}
+
+			if !alive {
+				break
 			}
 
 			if moved {
@@ -115,9 +74,42 @@ L:
 				e.updateChannels()
 			}
 		}
-
-		timer.Stop()
 	}
+}
+
+func (e *Explorer) handleResponse(quit *atomic.Bool, direction LogDirection) (bool, bool) {
+	moved := false
+
+	res := tryRecievMessage(e.responds, quit)
+
+	if res == nil {
+		return true, false
+	}
+
+	switch res.msgType {
+	case ExplorerMessageEnterConfirm:
+		e.LogExplorerMoved(direction)
+		switch direction {
+		case North:
+			e.y -= 1
+		case South:
+			e.y += 1
+		case West:
+			e.x -= 1
+		case East:
+			e.x += 1
+		default:
+			fmt.Fprintln(os.Stderr, "ERROR: Incorrect direction parameter!")
+		}
+		moved = true
+	case ExplorerMessegeEnterHazard:
+		e.LogExplorerDied()
+		trySendMessage(e.current, Message{msgType: ExplorerMessageLeave, expId: e.id}, quit)
+		return false, moved
+	default:
+		fmt.Fprintln(os.Stderr, "ERROR: this type of message should not be handled here:", res)
+	}
+	return true, moved
 }
 
 func (e *Explorer) updateChannels() {

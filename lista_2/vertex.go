@@ -41,13 +41,19 @@ func (v Vertex) run(wg *sync.WaitGroup, explorerStats *ExplorerStats, quit *atom
 				switch msg.msgType {
 				case ExplorerMessageEnter:
 					if !v.hazardous {
-						v.occupied = true
-						v.in <- Message{msgType: ExplorerMessageEnterConfirm}
-						v.LogExplorerReceived(msg.expId)
+						response := Message{msgType: ExplorerMessageEnterConfirm}
+						ok := trySendMessage(msg.responseChannel, response, quit)
+						if ok {
+							v.occupied = true
+							v.LogExplorerReceived(msg.expId)
+						}
 					} else {
-						v.hazardous = false
-						v.in <- Message{msgType: ExplorerMessegeEnterHazard}
-						v.LogMsgExplorerEnteredHazard(msg.expId)
+						response := Message{msgType: ExplorerMessegeEnterHazard}
+						ok := trySendMessage(msg.responseChannel, response, quit)
+						if ok {
+							v.hazardous = false
+							v.LogMsgExplorerEnteredHazard(msg.expId)
+						}
 					}
 				default:
 					fmt.Fprintln(os.Stderr, "ERROR: We should only receive ExplorerMessageEnter here")
@@ -99,17 +105,21 @@ func spawnExplorer(wg *sync.WaitGroup, quit *atomic.Bool, lattice *Lattice, expl
 		explorerStats.count += 1
 		explorerStats.mu.Unlock()
 
-		explorer := Explorer{id: expId, x: v.x, y: v.y, lattice: lattice}
-		explorer.updateChannels()
+		explorer := Explorer{id: expId, x: v.x, y: v.y, lattice: lattice, responds: make(chan Message)}
 		v.occupied = true
 		v.LogExplorerSpawned(expId)
 		wg.Add(1)
 
 		go func() {
+			// setup explorer and run it
+			explorer.updateChannels()
 			explorer.run(quit, logChannel)
+
+			// cleanup after the finish
 			explorerStats.mu.Lock()
 			explorerStats.count -= 1
 			explorerStats.mu.Unlock()
+
 			wg.Done()
 		}()
 	} else {
