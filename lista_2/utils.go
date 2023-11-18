@@ -1,11 +1,33 @@
 package main
 
 import (
-	"sync/atomic"
 	"time"
 )
 
-func trySendMessage(channel chan<- Message, message Message, shouldQuit *atomic.Bool) bool {
+type MessageType int
+
+type Message struct {
+	msgType         MessageType
+	expId           int
+	responseChannel chan Message
+}
+
+const (
+	MsgExplorerEnter MessageType = iota
+	MsgExplorerEnterConfirm
+	MsgExplorerEnterDeny
+	MsgExplorerEnterHazard
+	MsgExplorerLeave
+	MsgExplorerReady
+	MsgWildLocatorDied
+	MsgWildLocatorEvict
+	MsgWildLocatorEnter
+	MsgWildLocatorEnterConfirm
+	MsgWildLocatorEvictConfirm
+	MsgWildLocatorEvictDeny
+)
+
+func trySendMessage(channel chan<- Message, message Message) bool {
 	for !shouldQuit.Load() {
 		timer := time.NewTimer(10 * time.Millisecond)
 		select {
@@ -18,7 +40,7 @@ func trySendMessage(channel chan<- Message, message Message, shouldQuit *atomic.
 	return false
 }
 
-func tryRecievMessage(channel <-chan Message, shouldQuit *atomic.Bool) *Message {
+func tryRecievMessage(channel <-chan Message) *Message {
 	for !shouldQuit.Load() {
 		timer := time.NewTimer(10 * time.Millisecond)
 		select {

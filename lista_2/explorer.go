@@ -4,61 +4,78 @@ import (
 	"fmt"
 	"math/rand"
 	"os"
-	"sync/atomic"
+	"sync"
 	"time"
 )
 
 type Explorer struct {
-	logger   *ExplorerLogger
-	id       int
-	lattice  *Lattice
-	x        int
-	y        int
-	responds chan Message
-	current  chan<- Message
-	north    chan<- Message
-	south    chan<- Message
-	east     chan<- Message
-	west     chan<- Message
+	logger  *ExplorerLogger
+	id      int
+	lattice *Lattice
+	x       int
+	y       int
+	self    chan Message
+	current chan<- Message
+	north   chan<- Message
+	south   chan<- Message
+	east    chan<- Message
+	west    chan<- Message
 }
 
-type MessageType int
+func spawnExplorer(wg *sync.WaitGroup, lattice *Lattice, explorerStats *ExplorerStats, maxExplorers int, v *Vertex, logChannel chan<- LogMessage) {
+	explorerStats.mu.Lock()
+	if explorerStats.count < maxExplorers {
+		expId := explorerStats.nextId
+		explorerStats.nextId += 1
+		if explorerStats.nextId == 100 {
+			explorerStats.nextId = 1
+		}
+		explorerStats.count += 1
+		explorerStats.mu.Unlock()
 
-type Message struct {
-	msgType         MessageType
-	expId           int
-	responseChannel chan<- Message
+		explorer := Explorer{id: expId, x: v.x, y: v.y, lattice: lattice, self: make(chan Message)}
+		v.hasExplorer = true
+		v.LogExplorerSpawned(expId)
+		wg.Add(1)
+
+		go func() {
+			// setup explorer and run it
+			explorer.updateChannels()
+			explorer.AttachLogger(logChannel)
+			explorer.run()
+
+			// cleanup after the finish
+			explorerStats.mu.Lock()
+			explorerStats.count -= 1
+			explorerStats.mu.Unlock()
+
+			wg.Done()
+		}()
+	} else {
+		explorerStats.mu.Unlock()
+	}
 }
 
-const (
-	ExplorerMessageEnter MessageType = iota
-	ExplorerMessageEnterConfirm
-	ExplorerMessegeEnterHazard
-	ExplorerMessageLeave
-	ExplorerMessageReady
-)
-
-func (e *Explorer) run(quit *atomic.Bool, logChannel chan<- LogMessage) {
-	e.AttachLogger(logChannel)
+func (e *Explorer) run() {
 	ticker := time.NewTicker(tickTime)
 	defer ticker.Stop()
 
-	for !quit.Load() {
+	for !shouldQuit.Load() {
 		<-ticker.C
 
 		if rand.Float64() < moveExplorerRate {
 			var moved bool
 			var alive bool
-			msg := Message{msgType: ExplorerMessageEnter, expId: e.id, responseChannel: e.responds}
+			msg := Message{msgType: MsgExplorerEnter, expId: e.id, responseChannel: e.self}
 			select {
 			case e.north <- msg:
-				alive, moved = e.handleResponse(quit, North)
+				alive, moved = e.handleResponse(North)
 			case e.south <- msg:
-				alive, moved = e.handleResponse(quit, South)
+				alive, moved = e.handleResponse(South)
 			case e.east <- msg:
-				alive, moved = e.handleResponse(quit, East)
+				alive, moved = e.handleResponse(East)
 			case e.west <- msg:
-				alive, moved = e.handleResponse(quit, West)
+				alive, moved = e.handleResponse(West)
 			default:
 				// no neighbor is available, so we reset the timer
 				moved = false
@@ -70,24 +87,24 @@ func (e *Explorer) run(quit *atomic.Bool, logChannel chan<- LogMessage) {
 			}
 
 			if moved {
-				e.current <- Message{msgType: ExplorerMessageLeave, expId: e.id}
+				trySendMessage(e.current, Message{msgType: MsgExplorerLeave, expId: e.id})
 				e.updateChannels()
 			}
 		}
 	}
 }
 
-func (e *Explorer) handleResponse(quit *atomic.Bool, direction LogDirection) (bool, bool) {
+func (e *Explorer) handleResponse(direction LogDirection) (bool, bool) {
 	moved := false
 
-	res := tryRecievMessage(e.responds, quit)
+	res := tryRecievMessage(e.self)
 
 	if res == nil {
 		return true, false
 	}
 
 	switch res.msgType {
-	case ExplorerMessageEnterConfirm:
+	case MsgExplorerEnterConfirm:
 		e.LogExplorerMoved(direction)
 		switch direction {
 		case North:
@@ -102,10 +119,14 @@ func (e *Explorer) handleResponse(quit *atomic.Bool, direction LogDirection) (bo
 			fmt.Fprintln(os.Stderr, "ERROR: Incorrect direction parameter!")
 		}
 		moved = true
-	case ExplorerMessegeEnterHazard:
+	case MsgExplorerEnterHazard:
 		e.LogExplorerDied()
-		trySendMessage(e.current, Message{msgType: ExplorerMessageLeave, expId: e.id}, quit)
+		trySendMessage(e.current, Message{msgType: MsgExplorerLeave, expId: e.id})
 		return false, moved
+	case MsgExplorerEnterDeny:
+		// I guess we couldn't enter XD
+		moved = false
+		return true, moved
 	default:
 		fmt.Fprintln(os.Stderr, "ERROR: this type of message should not be handled here:", res)
 	}

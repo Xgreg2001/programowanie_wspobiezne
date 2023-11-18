@@ -10,17 +10,19 @@ import (
 )
 
 // TODO: Make error messages more meaningful
-
+// TODO: Split constants to correct files
 const (
-	tickTime          = 50 * time.Millisecond
-	spawnExplorerRate = 0.01
-	moveExplorerRate  = 0.10
-	spawnHazardRate   = 0.01
-	hazardLifeTime    = 10 * tickTime
-	logBuffer         = 100
-	runTime           = 10 * time.Second
-	cameraTick        = 300 * time.Millisecond
-	cameraBuffer      = 100
+	tickTime             = 50 * time.Millisecond
+	spawnExplorerRate    = 0.05
+	moveExplorerRate     = 0.10
+	spawnHazardRate      = 0.05
+	hazardLifeTime       = 10 * tickTime
+	spawnWildLocatorRate = 0.05
+	WildLocatorLifeTime  = 10 * tickTime
+	logBuffer            = 100
+	runTime              = 5 * time.Second
+	cameraTick           = 100 * time.Millisecond
+	cameraBuffer         = 100
 )
 
 type ExplorerStats struct {
@@ -29,9 +31,10 @@ type ExplorerStats struct {
 	mu     sync.Mutex
 }
 
+var shouldQuit atomic.Bool = atomic.Bool{}
+
 func main() {
 	explorerStats := ExplorerStats{count: 0, nextId: 1}
-	quit := atomic.Bool{}
 
 	n := 10
 	m := 10
@@ -79,11 +82,12 @@ func main() {
 	vertexWg.Add(n * m)
 
 	explorerWg := sync.WaitGroup{}
+	wildLocatorWg := sync.WaitGroup{}
 
 	for i := 0; i < n; i++ {
 		for j := 0; j < m; j++ {
 			go func(v Vertex) {
-				v.run(&explorerWg, &explorerStats, &quit, maxExplorers, logChannel, &lattice)
+				v.run(&explorerWg, &explorerStats, &wildLocatorWg, maxExplorers, logChannel, &lattice)
 				vertexWg.Done()
 			}(lattice.vertices[i][j])
 		}
@@ -93,13 +97,16 @@ func main() {
 
 	fmt.Println("INFO: starting the exit sequence")
 
-	quit.Store(true)
+	shouldQuit.Store(true)
 
 	vertexWg.Wait()
 	fmt.Println("INFO: all vertex routines finished")
 
 	explorerWg.Wait()
 	fmt.Println("INFO: all explorer routines finished")
+
+	wildLocatorWg.Wait()
+	fmt.Println("INFO: all wild locator routines finished")
 
 	close(logChannel)
 

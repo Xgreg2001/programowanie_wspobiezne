@@ -25,10 +25,13 @@ const (
 	LogMsgExplorerMoved
 	LogMsgExplorerReceived
 	LogMsgExplorerLeft
-	LogMsgHazardSpawned
-	LogMsgHazardDisappeared
 	LogMsgExplorerDied
 	LogMsgExplorerEnteredHazard
+	LogMsgHazardSpawned
+	LogMsgHazardDisappeared
+	LogMsgWildLocatorSpawned
+	LogMsgWildLocatorMoved
+	LogMsgWildLocatorDied
 )
 
 type LogDirection int
@@ -66,12 +69,55 @@ type ExplorerLogger struct {
 	logChannel chan<- LogMessage
 }
 
+type WildLocatorLogger struct {
+	logChannel chan<- LogMessage
+}
+
 func (v *Vertex) AttachLogger(logChannel chan<- LogMessage) {
 	v.logger = &VertexLogger{logChannel: logChannel}
 }
 
 func (e *Explorer) AttachLogger(logChannel chan<- LogMessage) {
 	e.logger = &ExplorerLogger{logChannel: logChannel}
+}
+
+func (w *WildLocator) AttachLogger(logChannel chan<- LogMessage) {
+	w.logger = &WildLocatorLogger{logChannel: logChannel}
+}
+
+func (v Vertex) LogWildLocatorSpawned() {
+	if v.logger != nil {
+		v.logger.logChannel <- MakeLogMsgWildLocatorSpawned(v.id, v.x, v.y)
+	} else {
+		fmt.Fprintln(os.Stderr, "ERROR: no logger attached to vertex on wildLocator spawned:", v)
+	}
+}
+
+func (w WildLocator) LogWildLocatorDied() {
+	if w.logger != nil {
+		w.logger.logChannel <- MakeLogMsgWildLocatorDied(w.x, w.y)
+	} else {
+		fmt.Fprintln(os.Stderr, "ERROR: no logger attached to wildLocator on wildLocator Died:", w)
+	}
+}
+
+func (w WildLocator) LogWildLocatorMoved(direction LogDirection) {
+	if w.logger != nil {
+		switch direction {
+		case North:
+			w.logger.logChannel <- MakeLogMsgWildLocatorMoved(w.x, w.y, w.x, w.y-1, direction)
+		case South:
+			w.logger.logChannel <- MakeLogMsgWildLocatorMoved(w.x, w.y, w.x, w.y+1, direction)
+		case East:
+			w.logger.logChannel <- MakeLogMsgWildLocatorMoved(w.x, w.y, w.x+1, w.y, direction)
+		case West:
+			w.logger.logChannel <- MakeLogMsgWildLocatorMoved(w.x, w.y, w.x-1, w.y, direction)
+		default:
+			panic("Can't log wild locator moved with no direction")
+		}
+	} else {
+		fmt.Fprintln(os.Stderr, "ERROR: no logger attached to wildLocator on wild locator move: ", w)
+	}
 }
 
 func (v Vertex) LogExplorerSpawned(expId int) {
@@ -140,6 +186,7 @@ func (v Vertex) LogHazardSpawned() {
 		fmt.Fprintln(os.Stderr, "ERROR: no logger attached on Hazard Spawned")
 	}
 }
+
 func (v Vertex) LogHazardDisappeared() {
 	if v.logger != nil {
 		v.logger.logChannel <- MakeLogMsgHazardDisappeared(v.id, v.x, v.y)
@@ -147,13 +194,15 @@ func (v Vertex) LogHazardDisappeared() {
 		fmt.Fprintln(os.Stderr, "ERROR: no logger attached on Hazard Disapeard")
 	}
 }
+
+// TODO: fix names of toX fromX
 func (l LogMessage) String() string {
 	result := fmt.Sprintf("ID: %2d [%s] ", l.vertexId, l.timestamp.Format(time.StampMicro))
 	switch l.logType {
 	case LogMsgExplorerSpawned:
 		result += fmt.Sprintf("E-ID: %2d %15s (%2d,%2d)", l.expId, "spawned at", l.fromY, l.fromX)
 	case LogMsgExplorerMoved:
-		result += fmt.Sprintf("E-ID: %2d %15s (%2d,%2d) %2s (%2d,%2d) [%s]", l.expId, "send from", l.fromY, l.fromX, "to", l.toY, l.toX, l.direction)
+		result += fmt.Sprintf("E-ID: %2d %15s (%2d,%2d) %2s (%2d,%2d) [%s]", l.expId, "moved from", l.fromY, l.fromX, "to", l.toY, l.toX, l.direction)
 	case LogMsgExplorerReceived:
 		result += fmt.Sprintf("E-ID: %2d %15s (%2d,%2d)", l.expId, "received at", l.toY, l.toX)
 	case LogMsgExplorerLeft:
@@ -166,6 +215,12 @@ func (l LogMessage) String() string {
 		result += fmt.Sprintf("E-ID: %2d %15s (%2d,%2d)", l.expId, "entered hazard", l.toY, l.toX)
 	case LogMsgExplorerDied:
 		result += fmt.Sprintf("E-ID: %2d %15s", l.expId, "died")
+	case LogMsgWildLocatorSpawned:
+		result += fmt.Sprintf("WILD:    %15s (%2d,%2d)", "spawned at", l.fromY, l.fromX)
+	case LogMsgWildLocatorMoved:
+		result += fmt.Sprintf("WILD:    %15s (%2d,%2d) %2s (%2d,%2d) [%s]", "moved from", l.fromY, l.fromX, "to", l.toY, l.toX, l.direction)
+	case LogMsgWildLocatorDied:
+		result += fmt.Sprintf("WILD:    %15s", "died")
 	default:
 		result += fmt.Sprint("No such log type")
 	}
@@ -174,6 +229,34 @@ func (l LogMessage) String() string {
 
 func MakeLogMsgBlueprint() LogMessage {
 	return LogMessage{timestamp: time.Now(), direction: None}
+}
+
+func MakeLogMsgWildLocatorSpawned(vertexId, x, y int) LogMessage {
+	msg := MakeLogMsgBlueprint()
+	msg.logType = LogMsgWildLocatorSpawned
+	msg.fromX = x
+	msg.fromY = y
+	msg.vertexId = vertexId
+	return msg
+}
+
+func MakeLogMsgWildLocatorMoved(fromX, fromY, toX, toY int, direction LogDirection) LogMessage {
+	msg := MakeLogMsgBlueprint()
+	msg.fromX = fromX
+	msg.fromY = fromY
+	msg.toX = toX
+	msg.toY = toY
+	msg.logType = LogMsgWildLocatorMoved
+	msg.direction = direction
+	return msg
+}
+
+func MakeLogMsgWildLocatorDied(x, y int) LogMessage {
+	msg := MakeLogMsgBlueprint()
+	msg.logType = LogMsgWildLocatorDied
+	msg.fromY = x
+	msg.fromY = y
+	return msg
 }
 
 func MakeLogMsgExplorerSpawned(vertId, x, y, expId int) LogMessage {
@@ -294,6 +377,12 @@ func loggerRun(logChanel <-chan LogMessage, cameraChannel chan<- CameraMessage) 
 			cameraChannel <- RecordRemoveHazard(log.toX, log.toY)
 		case LogMsgExplorerDied:
 			cameraChannel <- RecordRemoveExplorer(log.expId, log.toX, log.toY)
+		case LogMsgWildLocatorSpawned:
+			cameraChannel <- RecordSpawnWildLocator(log.fromX, log.fromY)
+		case LogMsgWildLocatorMoved:
+			cameraChannel <- RecordMoveWildLocator(log.fromX, log.fromY, log.toX, log.toY)
+		case LogMsgWildLocatorDied:
+			cameraChannel <- RecordRemoveWildLocator(log.fromX, log.fromY)
 		}
 
 	}

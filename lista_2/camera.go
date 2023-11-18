@@ -35,6 +35,9 @@ const (
 	CamHazardSpawned
 	CamHazardRemoved
 	CamExplorerRemoved
+	CamWildLocatorSpawned
+	CamWildLocatorMoved
+	CamWildLocatorRemoved
 )
 
 func RecordSpawnExplorer(expId, x, y int) CameraMessage {
@@ -55,6 +58,18 @@ func RecordRemoveHazard(x, y int) CameraMessage {
 
 func RecordRemoveExplorer(expId, x, y int) CameraMessage {
 	return CameraMessage{messageType: CamExplorerRemoved, x: x, y: y, expId: expId}
+}
+
+func RecordSpawnWildLocator(x, y int) CameraMessage {
+	return CameraMessage{messageType: CamWildLocatorSpawned, x: x, y: y}
+}
+
+func RecordMoveWildLocator(fromX, fromY, toX, toY int) CameraMessage {
+	return CameraMessage{messageType: CamWildLocatorMoved, x: fromX, y: fromY, xHelper: toX, yHelper: toY}
+}
+
+func RecordRemoveWildLocator(x, y int) CameraMessage {
+	return CameraMessage{messageType: CamWildLocatorRemoved, x: x, y: y}
 }
 
 func (c Camera) PrintBoard() {
@@ -99,6 +114,7 @@ func (c Camera) PrintBoard() {
 }
 
 func (c Camera) Start() {
+	// TODO: add checks if operations that we perform make sens
 	ticker := time.NewTicker(cameraTick)
 	defer ticker.Stop()
 
@@ -119,11 +135,48 @@ func (c Camera) Start() {
 				c.crossedEdges[fromId][toId] = true
 				c.crossedEdges[toId][fromId] = true
 			case CamHazardSpawned:
-				c.board[msg.y][msg.x] = "##"
+				if c.board[msg.y][msg.x] == "" {
+					c.board[msg.y][msg.x] = "# "
+				} else if c.board[msg.y][msg.x] == " *" {
+					c.board[msg.y][msg.x] = "#*"
+				}
 			case CamHazardRemoved:
-				c.board[msg.y][msg.x] = ""
+				if c.board[msg.y][msg.x] == "# " {
+					c.board[msg.y][msg.x] = ""
+				} else if c.board[msg.y][msg.x] == "#*" {
+					c.board[msg.y][msg.x] = " *"
+				}
 			case CamExplorerRemoved:
 				c.board[msg.y][msg.x] = ""
+			case CamWildLocatorSpawned:
+				if c.board[msg.y][msg.x] == "" {
+					c.board[msg.y][msg.x] = " *"
+				} else if c.board[msg.y][msg.x] == "# " {
+					c.board[msg.y][msg.x] = "#*"
+				}
+			case CamWildLocatorMoved:
+				if c.board[msg.y][msg.x] == " *" {
+					c.board[msg.y][msg.x] = ""
+				} else if c.board[msg.y][msg.x] == "#*" {
+					c.board[msg.y][msg.x] = "# "
+				}
+
+				if c.board[msg.yHelper][msg.xHelper] == "" {
+					c.board[msg.yHelper][msg.xHelper] = " *"
+				} else if c.board[msg.yHelper][msg.xHelper] == "# " {
+					c.board[msg.yHelper][msg.xHelper] = "#*"
+				}
+
+				fromId := msg.y*c.n + msg.x
+				toId := msg.yHelper*c.n + msg.xHelper
+				c.crossedEdges[fromId][toId] = true
+				c.crossedEdges[toId][fromId] = true
+			case CamWildLocatorRemoved:
+				if c.board[msg.y][msg.x] == " *" {
+					c.board[msg.y][msg.x] = ""
+				} else if c.board[msg.y][msg.x] == "#*" {
+					c.board[msg.y][msg.x] = "# "
+				}
 			}
 
 			if !ok {
